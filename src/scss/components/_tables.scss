@@ -1,0 +1,32 @@
+/**
+ * Table styling
+ */
+
+.markdown-rendered {
+  table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    overflow: hidden;
+  }
+
+  th, td {
+    border: 1px solid var(--table-border);
+    padding: 0.5em 1em;
+  }
+
+  thead {
+    background-color: var(--background-secondary);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--table-row-background);
+  }
+
+  tr:nth-child(odd) {
+    background-color: var(--background-primary);
+  }
+
+  tr:hover {
+    background-color: var(--table-row-background-hover);
+  }
+}

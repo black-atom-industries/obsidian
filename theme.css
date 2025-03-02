@@ -1,34 +1,370 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+/*
+ * Black Atom for Obsidian
+ * https://github.com/black-atom-industries/obsidian
+ */
+/* 
+ * Style Settings Plugin Configuration 
+ */
+/* @settings
+
+name: Black Atom Theme Settings
+id: black-atom-theme
+settings:
+    - 
+        id: theme-variant
+        title: Theme Variant
+        type: class-select
+        allowEmpty: false
+        default: black-atom-stations-engineering
+        options:
+            - 
+                label: "Stations: Engineering"
+                value: black-atom-stations-engineering
+
+*/
+/* Import components */
+/**
+ * Base styling for the theme
+ */
+:root body {
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-monospace: "Source Code Pro", monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-normal: 16px;
+  --font-size-code: 14px;
+  --line-height-normal: 1.5;
+  --line-width: 42em;
+  --cursor: default;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+/* Map theme-specific vars to Obsidian CSS vars */
+.theme-dark.black-atom-stations-engineering {
+  /* Base colors */
+  --background-primary: var(--ui-bg-default);
+  --background-primary-alt: var(--ui-bg-active);
+  --background-secondary: var(--ui-bg-panel);
+  --background-secondary-alt: var(--ui-bg-float);
+  --background-modifier-border: var(--ui-bg-hover);
+  --background-modifier-form-field: var(--ui-bg-default);
+  --background-modifier-form-field-highlighted: var(--ui-bg-active);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--ui-bg-positive);
+  --background-modifier-error: var(--ui-bg-negative);
+  --background-modifier-error-rgb: 220, 95, 95;
+  --background-modifier-error-hover: var(--ui-bg-negative);
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  /* Text colors */
+  --text-normal: var(--ui-fg-default);
+  --text-muted: var(--ui-fg-subtle);
+  --text-faint: var(--ui-fg-disabled);
+  --text-accent: var(--ui-fg-accent);
+  --text-accent-hover: var(--ui-fg-accent);
+  --text-error: var(--ui-fg-negative);
+  --text-error-hover: var(--ui-fg-negative);
+  --text-highlight-bg: var(--ui-bg-search);
+  --text-selection: var(--ui-bg-selection);
+  --text-on-accent: var(--ui-fg-contrast);
+  /* Interactive colors */
+  --interactive-normal: var(--ui-bg-default);
+  --interactive-hover: var(--ui-bg-hover);
+  --interactive-accent: var(--ui-fg-accent);
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: var(--ui-fg-accent);
+  --interactive-success: var(--ui-fg-positive);
+  /* Scrollbar */
+  --scrollbar-bg: var(--ui-bg-default);
+  --scrollbar-thumb-bg: var(--ui-bg-active);
+  --scrollbar-active-thumb-bg: var(--ui-fg-subtle);
+  /* UI elements */
+  --border-color: var(--ui-bg-active);
+  --quote-border: var(--markup-quote);
+  --code-block-bg: var(--markup-code-bg);
+  --code-block-border: var(--ui-bg-hover);
 }
 
+/* Clean UI elements */
+input, button, .dropdown {
+  border-radius: 2px !important;
+}
+
+/* Improved scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/**
+ * Typography styling 
+ */
+.theme-dark.black-atom-stations-engineering {
+  /* Headings */
+  --h1-color: var(--markup-h1);
+  --h2-color: var(--markup-h2);
+  --h3-color: var(--markup-h3);
+  --h4-color: var(--markup-h4);
+  --h5-color: var(--markup-h5);
+  --h6-color: var(--markup-h6);
+  /* Style elements */
+  --italic-color: var(--markup-italic);
+  --bold-color: var(--markup-strong);
+  --blockquote-text-color: var(--markup-quote);
+  /* Links */
+  --link-color: var(--markup-link);
+  --link-color-hover: var(--markup-link);
+  --link-external-color: var(--markup-link);
+  --link-external-color-hover: var(--markup-link);
+  /* Inline code */
+  --code-normal: var(--markup-code-fg);
+  --code-background: var(--markup-code-bg);
+}
+
+/* Headings */
+.markdown-rendered {
+  /* Styling for blockquotes */
+  /* Styling for inline code */
+  /* Styling for links */
+}
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.markdown-rendered h1 {
+  font-size: 2em;
+  color: var(--h1-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.25em;
+}
+.markdown-rendered h2 {
+  font-size: 1.75em;
+  color: var(--h2-color);
+}
+.markdown-rendered h3 {
+  font-size: 1.5em;
+  color: var(--h3-color);
+}
+.markdown-rendered h4 {
+  font-size: 1.25em;
+  color: var(--h4-color);
+}
+.markdown-rendered h5 {
+  font-size: 1.1em;
+  color: var(--h5-color);
+}
+.markdown-rendered h6 {
+  font-size: 1em;
+  color: var(--h6-color);
+}
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--quote-border);
+  margin: 1em 0;
+  padding: 0 1em;
+  color: var(--blockquote-text-color);
+}
+.markdown-rendered code {
+  font-size: var(--font-size-code);
+  color: var(--code-normal);
+  background-color: var(--code-background);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+.markdown-rendered a.external-link {
+  color: var(--link-external-color);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--link-external-color);
+}
+.markdown-rendered a.external-link:hover {
+  color: var(--link-external-color-hover);
+  border-bottom: 1px solid var(--link-external-color-hover);
+}
+.markdown-rendered a.internal-link {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.markdown-rendered a.internal-link:hover {
+  color: var(--link-color-hover);
+  border-bottom: 1px solid var(--link-color-hover);
+}
+
+/**
+ * Workspace and UI layout styling
+ */
+/* Tab styling */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+/* Clean SVG elements */
 svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
 }
 
+/* Menu styling */
 .menu {
-	padding: var(--size-2-1);
+  padding: var(--size-2-1);
+}
+.menu .menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+}
+.menu .menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+/**
+ * Sidebar and navigation styling
+ */
+/* Clean UI for sidebar elements */
+.nav-folder-title, .nav-file-title {
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 0;
 }
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+.nav-folder-title:hover, .nav-file-title:hover {
+  background-color: var(--interactive-hover);
 }
+
+.is-active .nav-file-title {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+/**
+ * Editor styling 
+ */
+.theme-dark.black-atom-stations-engineering {
+  /* Table styling */
+  --table-border: var(--ui-bg-active);
+  --table-row-background: var(--ui-bg-default);
+  --table-row-background-hover: var(--ui-bg-hover);
+  /* Pre/code blocks */
+  --pre-code: var(--markup-code-fg);
+}
+
+/* Code blocks */
+.markdown-rendered pre {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: var(--code-block-bg);
+  border: 1px solid var(--code-block-border);
+}
+
+/* Clean up tag styling */
+a.tag {
+  color: var(--text-accent) !important;
+  background-color: var(--interactive-hover);
+  font-size: 0.9em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+a.tag:hover {
+  color: var(--text-normal) !important;
+  background-color: var(--interactive-accent);
+}
+
+/**
+ * Code blocks and syntax highlighting
+ */
+/* Generic code block settings */
+.theme-dark.black-atom-stations-engineering {
+  --code-white-space: pre-wrap;
+  --code-border-width: 0px;
+  --code-border-color: var(--background-modifier-border);
+  --code-radius: var(--radius-s);
+  --code-size: var(--font-smaller);
+  /* Code syntax highlighting colors */
+  --code-normal: var(--syntax-variable);
+  --code-comment: var(--syntax-comment);
+  --code-function: var(--syntax-function);
+  --code-keyword: var(--syntax-keyword);
+  --code-operator: var(--syntax-operator);
+  --code-property: var(--syntax-property);
+  --code-punctuation: var(--ui-fg-subtle);
+  --code-string: var(--syntax-string);
+  --code-tag: var(--syntax-keyword);
+  --code-value: var(--syntax-constant);
+}
+
+/* Syntax highlighting custom tokens */
+.token.comment {
+  color: var(--code-comment);
+}
+
+.token.function {
+  color: var(--code-function);
+}
+
+.token.keyword {
+  color: var(--code-keyword);
+}
+
+.token.operator {
+  color: var(--code-operator);
+}
+
+.token.property {
+  color: var(--code-property);
+}
+
+.token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.token.string {
+  color: var(--code-string);
+}
+
+.token.tag {
+  color: var(--code-tag);
+}
+
+.token.number,
+.token.boolean,
+.token.constant {
+  color: var(--code-value);
+}
+
+/**
+ * Table styling
+ */
+.markdown-rendered table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  overflow: hidden;
+}
+.markdown-rendered th, .markdown-rendered td {
+  border: 1px solid var(--table-border);
+  padding: 0.5em 1em;
+}
+.markdown-rendered thead {
+  background-color: var(--background-secondary);
+}
+.markdown-rendered tr:nth-child(even) {
+  background-color: var(--table-row-background);
+}
+.markdown-rendered tr:nth-child(odd) {
+  background-color: var(--background-primary);
+}
+.markdown-rendered tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+/*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,34 @@
+/*
+ * Black Atom for Obsidian
+ * https://github.com/black-atom-industries/obsidian
+ */
+
+/* 
+ * Style Settings Plugin Configuration 
+ */
+/* @settings
+
+name: Black Atom Theme Settings
+id: black-atom-theme
+settings:
+    - 
+        id: theme-variant
+        title: Theme Variant
+        type: class-select
+        allowEmpty: false
+        default: black-atom-stations-engineering
+        options:
+            - 
+                label: "Stations: Engineering"
+                value: black-atom-stations-engineering
+
+*/
+
+/* Import components */
+@use "components/base";
+@use "components/typography";
+@use "components/workspace";
+@use "components/sidebar";
+@use "components/editor";
+@use "components/code";
+@use "components/tables";

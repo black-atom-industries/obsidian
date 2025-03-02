@@ -1,0 +1,65 @@
+/**
+ * Code blocks and syntax highlighting
+ */
+
+/* Generic code block settings */
+.theme-dark {
+  &.black-atom-stations-engineering {
+    --code-white-space: pre-wrap;
+    --code-border-width: 0px;
+    --code-border-color: var(--background-modifier-border);
+    --code-radius: var(--radius-s);
+    --code-size: var(--font-smaller);
+    
+    /* Code syntax highlighting colors */
+    --code-normal: var(--syntax-variable);
+    --code-comment: var(--syntax-comment);
+    --code-function: var(--syntax-function);
+    --code-keyword: var(--syntax-keyword);
+    --code-operator: var(--syntax-operator);
+    --code-property: var(--syntax-property);
+    --code-punctuation: var(--ui-fg-subtle);
+    --code-string: var(--syntax-string);
+    --code-tag: var(--syntax-keyword);
+    --code-value: var(--syntax-constant);
+  }
+}
+
+/* Syntax highlighting custom tokens */
+.token.comment {
+  color: var(--code-comment);
+}
+
+.token.function {
+  color: var(--code-function);
+}
+
+.token.keyword {
+  color: var(--code-keyword);
+}
+
+.token.operator {
+  color: var(--code-operator);
+}
+
+.token.property {
+  color: var(--code-property);
+}
+
+.token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.token.string {
+  color: var(--code-string);
+}
+
+.token.tag {
+  color: var(--code-tag);
+}
+
+.token.number,
+.token.boolean,
+.token.constant {
+  color: var(--code-value);
+}

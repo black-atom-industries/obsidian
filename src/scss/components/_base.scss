@@ -1,0 +1,89 @@
+/**
+ * Base styling for the theme
+ */
+
+:root body {
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-monospace: "Source Code Pro", monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-normal: 16px;
+  --font-size-code: 14px;
+  --line-height-normal: 1.5;
+  --line-width: 42em;
+  --cursor: default;
+}
+
+/* Map theme-specific vars to Obsidian CSS vars */
+.theme-dark {
+  &.black-atom-stations-engineering {
+    /* Base colors */
+    --background-primary: var(--ui-bg-default);
+    --background-primary-alt: var(--ui-bg-active);
+    --background-secondary: var(--ui-bg-panel);
+    --background-secondary-alt: var(--ui-bg-float);
+    --background-modifier-border: var(--ui-bg-hover);
+    --background-modifier-form-field: var(--ui-bg-default);
+    --background-modifier-form-field-highlighted: var(--ui-bg-active);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: var(--ui-bg-positive);
+    --background-modifier-error: var(--ui-bg-negative);
+    --background-modifier-error-rgb: 220, 95, 95;
+    --background-modifier-error-hover: var(--ui-bg-negative);
+    --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+    /* Text colors */
+    --text-normal: var(--ui-fg-default);
+    --text-muted: var(--ui-fg-subtle);
+    --text-faint: var(--ui-fg-disabled);
+    --text-accent: var(--ui-fg-accent);
+    --text-accent-hover: var(--ui-fg-accent);
+    --text-error: var(--ui-fg-negative);
+    --text-error-hover: var(--ui-fg-negative);
+    --text-highlight-bg: var(--ui-bg-search);
+    --text-selection: var(--ui-bg-selection);
+    --text-on-accent: var(--ui-fg-contrast);
+
+    /* Interactive colors */
+    --interactive-normal: var(--ui-bg-default);
+    --interactive-hover: var(--ui-bg-hover);
+    --interactive-accent: var(--ui-fg-accent);
+    --interactive-accent-rgb: 123, 108, 217;
+    --interactive-accent-hover: var(--ui-fg-accent);
+    --interactive-success: var(--ui-fg-positive);
+
+    /* Scrollbar */
+    --scrollbar-bg: var(--ui-bg-default);
+    --scrollbar-thumb-bg: var(--ui-bg-active);
+    --scrollbar-active-thumb-bg: var(--ui-fg-subtle);
+
+    /* UI elements */
+    --border-color: var(--ui-bg-active);
+    --quote-border: var(--markup-quote);
+    --code-block-bg: var(--markup-code-bg);
+    --code-block-border: var(--ui-bg-hover);
+  }
+}
+
+/* Clean UI elements */
+input, button, .dropdown {
+  border-radius: 2px !important;
+}
+
+/* Improved scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}

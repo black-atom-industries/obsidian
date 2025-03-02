@@ -1,0 +1,110 @@
+/**
+ * Typography styling 
+ */
+
+.theme-dark {
+  &.black-atom-stations-engineering {
+    /* Headings */
+    --h1-color: var(--markup-h1);
+    --h2-color: var(--markup-h2);
+    --h3-color: var(--markup-h3);
+    --h4-color: var(--markup-h4);
+    --h5-color: var(--markup-h5);
+    --h6-color: var(--markup-h6);
+
+    /* Style elements */
+    --italic-color: var(--markup-italic);
+    --bold-color: var(--markup-strong);
+    --blockquote-text-color: var(--markup-quote);
+    
+    /* Links */
+    --link-color: var(--markup-link);
+    --link-color-hover: var(--markup-link);
+    --link-external-color: var(--markup-link);
+    --link-external-color-hover: var(--markup-link);
+    
+    /* Inline code */
+    --code-normal: var(--markup-code-fg);
+    --code-background: var(--markup-code-bg);
+  }
+}
+
+/* Headings */
+.markdown-rendered {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: var(--h1-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    color: var(--h2-color);
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: var(--h3-color);
+  }
+
+  h4 {
+    font-size: 1.25em;
+    color: var(--h4-color);
+  }
+
+  h5 {
+    font-size: 1.1em;
+    color: var(--h5-color);
+  }
+
+  h6 {
+    font-size: 1em;
+    color: var(--h6-color);
+  }
+  
+  /* Styling for blockquotes */
+  blockquote {
+    border-left: 3px solid var(--quote-border);
+    margin: 1em 0;
+    padding: 0 1em;
+    color: var(--blockquote-text-color);
+  }
+  
+  /* Styling for inline code */
+  code {
+    font-size: var(--font-size-code);
+    color: var(--code-normal);
+    background-color: var(--code-background);
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+  }
+  
+  /* Styling for links */
+  a.external-link {
+    color: var(--link-external-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--link-external-color);
+    
+    &:hover {
+      color: var(--link-external-color-hover);
+      border-bottom: 1px solid var(--link-external-color-hover);
+    }
+  }
+
+  a.internal-link {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    
+    &:hover {
+      color: var(--link-color-hover);
+      border-bottom: 1px solid var(--link-color-hover);
+    }
+  }
+}

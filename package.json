@@ -1,7 +1,23 @@
 {
-    "name": "sample-obsidian-theme",
-    "version": "1.0.0",
-	"scripts": {
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
-	}
+  "name": "black-atom-obsidian",
+  "version": "1.0.0",
+  "description": "Black Atom themes for Obsidian",
+  "scripts": {
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "build": "sass src/scss/main.scss:theme.css && npx prettier .",
+    "dev": "sass --watch src/scss/main.scss:theme.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/black-atom-industries/obsidian.git"
+  },
+  "author": "Black Atom Industries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/black-atom-industries/obsidian/issues"
+  },
+  "homepage": "https://github.com/black-atom-industries/obsidian#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
 }
