@@ -1,12 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/black-atom-industries/core/refs/heads/main/adapter.schema.json",
   "collections": {
-    "stations": {
-      "template": "templates/theme-tokens.template.css",
+    "default": {
+      "template": "templates/default/collection.template.css",
       "themes": [
-        "black-atom-stations-engineering"
+        "black-atom-default-dark",
+        "black-atom-default-dark-dimmed",
+        "black-atom-default-light",
+        "black-atom-default-light-dimmed"
       ]
     }
-  },
-  "enabled": false
+  }
 }
