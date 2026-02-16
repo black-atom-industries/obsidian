@@ -1,12 +1,18 @@
 # Obsidian Adapter Restart — Implementation Plan
 
-> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
+> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to
+> implement this plan task-by-task.
 
-**Goal:** Replace the broken Obsidian adapter with a clean, colors-only implementation for the Default collection (4 themes).
+**Goal:** Replace the broken Obsidian adapter with a clean, colors-only
+implementation for the Default collection (4 themes).
 
-**Architecture:** Pure CSS template approach. Core generates one CSS file per theme via Eta template. A minimal shell script concatenates the Style Settings header + generated files into a single `theme.css`. No SCSS, no npm dependencies.
+**Architecture:** Pure CSS template approach. Core generates one CSS file per
+theme via Eta template. A minimal shell script concatenates the Style Settings
+header + generated files into a single `theme.css`. No SCSS, no npm
+dependencies.
 
-**Tech Stack:** Eta templates (via black-atom-core), bash, Obsidian CSS variables, Style Settings plugin.
+**Tech Stack:** Eta templates (via black-atom-core), bash, Obsidian CSS
+variables, Style Settings plugin.
 
 **Design doc:** `docs/plans/2026-02-15-obsidian-adapter-restart-design.md`
 
@@ -17,6 +23,7 @@
 Remove all files from the old SCSS-based approach. Keep only what we need.
 
 **Files:**
+
 - Delete: `src/scss/` (entire directory)
 - Delete: `build.sh`
 - Delete: `package.json`
@@ -29,7 +36,8 @@ Remove all files from the old SCSS-based approach. Keep only what we need.
 - Delete: `version-bump.mjs`
 - Delete: `versions.json`
 - Delete: `docs/theme-creation/` (entire directory)
-- Keep: `manifest.json` (root), `CLAUDE.md`, `README.md`, `.gitignore`, `.editorconfig`, `.github/`
+- Keep: `manifest.json` (root), `CLAUDE.md`, `README.md`, `.gitignore`,
+  `.editorconfig`, `.github/`
 
 **Step 1: Delete old files**
 
@@ -42,7 +50,8 @@ rm -f templates/manifest.template.json templates/manifest.json
 
 **Step 2: Clean up .gitignore**
 
-Update `.gitignore` to reflect new structure. Remove npm-specific entries, add generated file patterns:
+Update `.gitignore` to reflect new structure. Remove npm-specific entries, add
+generated file patterns:
 
 ```gitignore
 # Generated theme files (per-theme outputs from core adapt)
@@ -80,18 +89,22 @@ git commit -m "chore: remove old SCSS-based implementation [DEV-177]"
 
 ### Task 2: Update adapter configuration
 
-Configure `black-atom-adapter.json` for the Default collection with all 4 themes.
+Configure `black-atom-adapter.json` for the Default collection with all 4
+themes.
 
 **Files:**
+
 - Modify: `black-atom-adapter.json`
 
 **Step 1: Write the new adapter config**
 
 The core template engine derives output paths by:
+
 1. Replacing `.template.` with `.` in the template path
 2. Replacing `collection` with the theme key
 
 So template path `templates/default/collection.template.css` generates:
+
 - `templates/default/black-atom-default-dark.css`
 - `templates/default/black-atom-default-dark-dimmed.css`
 - `templates/default/black-atom-default-light.css`
@@ -99,18 +112,18 @@ So template path `templates/default/collection.template.css` generates:
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/black-atom-industries/core/refs/heads/main/adapter.schema.json",
-  "collections": {
-    "default": {
-      "template": "templates/default/collection.template.css",
-      "themes": [
-        "black-atom-default-dark",
-        "black-atom-default-dark-dimmed",
-        "black-atom-default-light",
-        "black-atom-default-light-dimmed"
-      ]
+    "$schema": "https://raw.githubusercontent.com/black-atom-industries/core/refs/heads/main/adapter.schema.json",
+    "collections": {
+        "default": {
+            "template": "templates/default/collection.template.css",
+            "themes": [
+                "black-atom-default-dark",
+                "black-atom-default-dark-dimmed",
+                "black-atom-default-light",
+                "black-atom-default-light-dimmed"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -131,27 +144,39 @@ git commit -m "chore: configure adapter for Default collection [DEV-177]"
 
 ### Task 3: Create the Eta template
 
-This is the core of the adapter. One template file that generates a CSS block for a single theme variant. The core processes this once per theme.
+This is the core of the adapter. One template file that generates a CSS block
+for a single theme variant. The core processes this once per theme.
 
 **Files:**
+
 - Create: `templates/default/collection.template.css`
 
 **Reference docs:**
-- Core theme type: `/Users/nbr/repos/black-atom-industries/core/src/types/theme.ts`
-- Design doc token mapping tables: `docs/plans/2026-02-15-obsidian-adapter-restart-design.md`
-- Obsidian CSS variables: https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
+
+- Core theme type:
+  `/Users/nbr/repos/black-atom-industries/core/src/types/theme.ts`
+- Design doc token mapping tables:
+  `docs/plans/2026-02-15-obsidian-adapter-restart-design.md`
+- Obsidian CSS variables:
+  https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
 - Eta template syntax: `<%= theme.xxx %>` for values, `<% %>` for JS logic
 
 **Step 1: Write the template**
 
-The template receives a `theme` object of type `Definition` with: `meta`, `primaries`, `palette`, `ui`, `syntax`.
+The template receives a `theme` object of type `Definition` with: `meta`,
+`primaries`, `palette`, `ui`, `syntax`.
 
 Key considerations:
-- Use `theme.meta.appearance` to determine `.theme-dark` vs `.theme-light` selector
+
+- Use `theme.meta.appearance` to determine `.theme-dark` vs `.theme-light`
+  selector
 - Use `theme.meta.key` for the variant class name
 - Obsidian needs `-rgb` variants for extended colors (format: `R, G, B`)
-- Hex-to-RGB conversion needs inline JS in the Eta template since core has no helper for this
-- Primaries map to `--color-base-*` scale. For dark themes: d10=00, d20=05, d30=10, d40=20, m10=25, m20=30, m30=35, m40=40, l10=50, l20=60, l30=70, l40=100. For light themes: the order reverses.
+- Hex-to-RGB conversion needs inline JS in the Eta template since core has no
+  helper for this
+- Primaries map to `--color-base-*` scale. For dark themes: d10=00, d20=05,
+  d30=10, d40=20, m10=25, m20=30, m30=35, m40=40, l10=50, l20=60, l30=70,
+  l40=100. For light themes: the order reverses.
 
 ```
 <%
@@ -324,9 +349,11 @@ git commit -m "feat: add Eta template for Default collection [DEV-177]"
 
 ### Task 4: Create the Style Settings header
 
-A static CSS file containing the Style Settings plugin configuration comment. This is concatenated at the top of `theme.css` during build.
+A static CSS file containing the Style Settings plugin configuration comment.
+This is concatenated at the top of `theme.css` during build.
 
 **Files:**
+
 - Create: `templates/style-settings.css`
 
 **Step 1: Write the Style Settings header**
@@ -371,10 +398,12 @@ git commit -m "feat: add Style Settings configuration header [DEV-177]"
 ### Task 5: Create the build script
 
 A simple shell script that:
+
 1. Runs `black-atom-core adapt` to generate per-theme CSS files
 2. Concatenates the Style Settings header + generated files into `theme.css`
 
 **Files:**
+
 - Create: `build.sh`
 
 **Step 1: Write the build script**
@@ -434,7 +463,8 @@ Generate the theme and verify it works.
 ./build.sh
 ```
 
-Expected: `theme.css` is generated with Style Settings header + 4 theme variant blocks.
+Expected: `theme.css` is generated with Style Settings header + 4 theme variant
+blocks.
 
 **Step 2: Inspect the output**
 
@@ -449,6 +479,7 @@ grep "^\.theme-" theme.css
 ```
 
 Expected: 4 selectors:
+
 - `.theme-dark.black-atom-default-dark {`
 - `.theme-dark.black-atom-default-dark-dimmed {`
 - `.theme-light.black-atom-default-light {`
@@ -466,7 +497,8 @@ Expected: No matches. If there are matches, a template variable is wrong.
 grep -c "^  --" theme.css
 ```
 
-Expected: Roughly 4 × ~80 = ~320 variable declarations total across all 4 theme blocks.
+Expected: Roughly 4 × ~80 = ~320 variable declarations total across all 4 theme
+blocks.
 
 **Step 4: Commit the generated output**
 
@@ -509,7 +541,8 @@ ln -sf "$(pwd)/manifest.json" "$VAULT_THEMES/Black-Atom/manifest.json"
 
 **Step 3: Note any issues for follow-up**
 
-If colors look wrong, the template mappings may need adjustment. This is iterative.
+If colors look wrong, the template mappings may need adjustment. This is
+iterative.
 
 ---
 
@@ -518,12 +551,15 @@ If colors look wrong, the template mappings may need adjustment. This is iterati
 Update CLAUDE.md and README.md to reflect the new architecture.
 
 **Files:**
+
 - Modify: `CLAUDE.md`
 - Modify: `README.md`
 
 **Step 1: Update CLAUDE.md**
 
-Replace content to reflect the pure CSS template approach, removing all SCSS references. Key sections to update:
+Replace content to reflect the pure CSS template approach, removing all SCSS
+references. Key sections to update:
+
 - Repository Structure (remove `src/scss/`, update `templates/`)
 - Build Process (just `./build.sh` which runs core adapt + concatenation)
 - Development Workflow (symlink + build + reload)
@@ -532,6 +568,7 @@ Replace content to reflect the pure CSS template approach, removing all SCSS ref
 **Step 2: Update README.md**
 
 Simplify to reflect the new minimal approach:
+
 - Installation instructions
 - How to switch variants (Style Settings)
 - Development setup (symlinks, build command)
@@ -548,9 +585,11 @@ git commit -m "docs: update project docs for new adapter architecture [DEV-177]"
 
 ### Task 9: Update .gitignore and clean up
 
-Ensure generated per-theme CSS files are gitignored (they're build artifacts) but `theme.css` is tracked (it's the distributable).
+Ensure generated per-theme CSS files are gitignored (they're build artifacts)
+but `theme.css` is tracked (it's the distributable).
 
 **Files:**
+
 - Modify: `.gitignore`
 
 **Step 1: Update .gitignore**

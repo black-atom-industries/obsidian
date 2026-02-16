@@ -1,0 +1,17 @@
+{
+    "tasks": {
+        "build": "deno run --allow-read --allow-write --allow-run scripts/build.ts",
+        "fmt": "deno fmt .",
+        "fmt:check": "deno fmt --check .",
+        "lint": "deno lint ."
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "exclude": ["themes/collection.template.css"]
+    },
+    "lint": {
+        "rules": {
+            "tags": ["recommended"]
+        }
+    }
+}

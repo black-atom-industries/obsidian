@@ -1,12 +1,13 @@
 # Black Atom for Obsidian
 
-A theme for [Obsidian](https://obsidian.md/) by [Black Atom Industries](https://github.com/black-atom-industries).
+A theme for [Obsidian](https://obsidian.md/) by
+[Black Atom Industries](https://github.com/black-atom-industries).
 
 ## Available Themes
 
-| Collection  | Variants                                   |
-| ----------- | ------------------------------------------ |
-| **Default** | Dark, Dark Dimmed, Light, Light Dimmed     |
+| Collection  | Variants                               |
+| ----------- | -------------------------------------- |
+| **Default** | Dark, Dark Dimmed, Light, Light Dimmed |
 
 ## Installation
 
@@ -21,13 +22,18 @@ Then in Obsidian: **Settings > Appearance > Theme > Black Atom**.
 
 ## Configuration
 
-Install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin to switch between theme variants:
+Install the
+[Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin to
+switch between theme variants:
 
 **Settings > Style Settings > Black Atom > Theme Variant**
 
 ## Development
 
-This adapter uses a pure CSS template approach. The [core CLI](https://github.com/black-atom-industries/core) processes Eta templates to generate per-theme CSS, and `build.sh` assembles them into `theme.css`.
+This adapter uses a pure CSS template approach. The
+[core CLI](https://github.com/black-atom-industries/core) processes Eta
+templates to generate per-theme CSS, and `build.sh` assembles them into
+`theme.css`.
 
 ```bash
 git clone https://github.com/black-atom-industries/obsidian.git
@@ -50,10 +56,14 @@ ln -s "$(pwd)/manifest.json" ~/path/to/vault/.obsidian/themes/Black-Atom/manifes
 
 ## Related Projects
 
-- [Black Atom Core](https://github.com/black-atom-industries/core) -- Core theme definitions
-- [Black Atom for Neovim](https://github.com/black-atom-industries/nvim) -- Neovim adapter
-- [Black Atom for Ghostty](https://github.com/black-atom-industries/ghostty) -- Ghostty terminal adapter
-- [Black Atom for Zed](https://github.com/black-atom-industries/zed) -- Zed editor adapter
+- [Black Atom Core](https://github.com/black-atom-industries/core) -- Core theme
+  definitions
+- [Black Atom for Neovim](https://github.com/black-atom-industries/nvim) --
+  Neovim adapter
+- [Black Atom for Ghostty](https://github.com/black-atom-industries/ghostty) --
+  Ghostty terminal adapter
+- [Black Atom for Zed](https://github.com/black-atom-industries/zed) -- Zed
+  editor adapter
 
 ## License
 
