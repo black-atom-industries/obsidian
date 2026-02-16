@@ -1,13 +1,7 @@
 # Generated per-theme CSS files (build artifacts from core generate)
-templates/default/*.css
-templates/stations/*.css
-templates/jpn/*.css
-templates/terra/*.css
-templates/mnml/*.css
-
-# Keep theme.css tracked (it's the distributable output)
-# Keep templates/*.template.css tracked (source templates)
-# Keep templates/style-settings.css tracked (static header)
+# All land in templates/ alongside the template and style-settings
+templates/*.css
+!templates/style-settings.css
 
 # OS
 .DS_Store
