@@ -1,7 +1,0 @@
-{
-  "name": "<%= theme.meta.label %>",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Black Atom Industries",
-  "authorUrl": "https://github.com/black-atom-industries"
-}
