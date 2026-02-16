@@ -1,15 +1,18 @@
-# vscode
-.vscode 
+# Generated per-theme CSS files (build artifacts from core generate)
+templates/default/*.css
+templates/stations/*.css
+templates/jpn/*.css
+templates/terra/*.css
+templates/mnml/*.css
 
-# Intellij
+# Keep theme.css tracked (it's the distributable output)
+# Keep templates/*.template.css tracked (source templates)
+# Keep templates/style-settings.css tracked (static header)
+
+# OS
+.DS_Store
+
+# Editors
+.vscode
 *.iml
 .idea
-
-# npm
-node_modules
-
-# Exclude sourcemaps
-*.map
-
-# Exclude macOS Finder (System Explorer) View States
-.DS_Store
