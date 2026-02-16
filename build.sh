@@ -5,7 +5,7 @@ echo "Building Black Atom Obsidian theme..."
 
 # Step 1: Generate per-theme CSS files from templates
 echo "Generating theme tokens..."
-black-atom-core adapt
+black-atom-core generate
 
 # Step 2: Assemble theme.css
 echo "Assembling theme.css..."
