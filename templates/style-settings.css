@@ -120,4 +120,16 @@ settings:
       -
         label: "MNML: ITA Light"
         value: black-atom-mnml-ita-light
+  -
+    id: interface-heading
+    title: Interface
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: hide-scrollbars
+    title: Hide Scrollbars
+    description: Hide scrollbars until hover (desktop only)
+    type: class-toggle
+    default: false
 */

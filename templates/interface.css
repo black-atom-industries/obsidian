@@ -1,0 +1,9 @@
+/* ============================================================
+   Black Atom — Interface & Layout
+   Theme-independent customizations. Not processed by Eta.
+   ============================================================ */
+
+/* --- Scrollbar: Hidden (desktop only) --- */
+body:not(.is-mobile).hide-scrollbars ::-webkit-scrollbar {
+  display: none;
+}

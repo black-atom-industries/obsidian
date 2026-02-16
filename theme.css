@@ -120,6 +120,18 @@ settings:
       -
         label: "MNML: ITA Light"
         value: black-atom-mnml-ita-light
+  -
+    id: interface-heading
+    title: Interface
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: hide-scrollbars
+    title: Hide Scrollbars
+    description: Hide scrollbars until hover (desktop only)
+    type: class-toggle
+    default: false
 */
 
 
@@ -4677,4 +4689,14 @@ settings:
   --nav-item-color-hover: #e2e8f2;
   --nav-item-color-active: #fba952;
   --nav-item-color-selected: #e2e8f2;
+}
+
+/* ============================================================
+   Black Atom — Interface & Layout
+   Theme-independent customizations. Not processed by Eta.
+   ============================================================ */
+
+/* --- Scrollbar: Hidden (desktop only) --- */
+body:not(.is-mobile).hide-scrollbars ::-webkit-scrollbar {
+  display: none;
 }

@@ -20,6 +20,7 @@ This is the Obsidian adapter for Black Atom themes. It uses a pure CSS template 
 ├── templates/
 │   ├── default/
 │   │   └── collection.template.css  # Eta template for Default collection
+│   ├── interface.css                # Static interface/layout CSS (not Eta-processed)
 │   └── style-settings.css           # Style Settings plugin config
 └── theme.css                  # Generated output (committed)
 ```
@@ -29,7 +30,7 @@ This is the Obsidian adapter for Black Atom themes. It uses a pure CSS template 
 1. `black-atom-core generate` reads `black-atom-adapter.json`
 2. For each collection, it processes the Eta template once per theme, injecting the theme object
 3. Generated CSS files land next to the template (e.g. `templates/default/black-atom-default-dark.css`)
-4. `build.sh` concatenates `templates/style-settings.css` + all generated CSS files into `theme.css`
+4. `build.sh` concatenates `templates/style-settings.css` + all generated CSS files + `templates/interface.css` into `theme.css`
 
 The `black-atom-adapter.json` maps collections to templates and lists their themes:
 
@@ -80,7 +81,7 @@ Templates use [Eta](https://eta.js.org/) syntax. The `theme` object is injected 
 
 ## Development Workflow
 
-1. Edit the template (`templates/default/collection.template.css`) or `templates/style-settings.css`
+1. Edit the template (`templates/default/collection.template.css`), `templates/style-settings.css`, or `templates/interface.css`
 2. Run `./build.sh`
 3. Reload Obsidian to see changes
 
