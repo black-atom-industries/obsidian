@@ -1,0 +1,25 @@
+/* @settings
+name: Black Atom
+id: black-atom
+settings:
+  -
+    id: theme-variant
+    title: Theme Variant
+    description: Choose your Black Atom theme variant
+    type: class-select
+    allowEmpty: false
+    default: black-atom-default-dark
+    options:
+      -
+        label: "Default: Dark"
+        value: black-atom-default-dark
+      -
+        label: "Default: Dark Dimmed"
+        value: black-atom-default-dark-dimmed
+      -
+        label: "Default: Light"
+        value: black-atom-default-light
+      -
+        label: "Default: Light Dimmed"
+        value: black-atom-default-light-dimmed
+*/
