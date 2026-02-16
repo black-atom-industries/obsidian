@@ -2,7 +2,9 @@
 # All land in templates/ alongside the template and style-settings
 templates/*.css
 !templates/style-settings.css
-!templates/interface.css
+!templates/interface/
+
+tmp_*
 
 # OS
 .DS_Store

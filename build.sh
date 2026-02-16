@@ -14,17 +14,19 @@ echo "" >> theme.css
 
 # Concatenate all generated theme CSS files
 for file in templates/*.css; do
-  # Skip source files (templates, style-settings, interface)
+  # Skip source files (templates, style-settings)
   [[ "$file" == *.template.css ]] && continue
   [[ "$file" == templates/style-settings.css ]] && continue
-  [[ "$file" == templates/interface.css ]] && continue
   [ -f "$file" ] || continue
   echo "" >> theme.css
   cat "$file" >> theme.css
 done
 
 # Append static interface customizations
-echo "" >> theme.css
-cat templates/interface.css >> theme.css
+for file in templates/interface/*.css; do
+  [ -f "$file" ] || continue
+  echo "" >> theme.css
+  cat "$file" >> theme.css
+done
 
 echo "Build complete: theme.css"
