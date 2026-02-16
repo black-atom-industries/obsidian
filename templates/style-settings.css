@@ -127,6 +127,139 @@ settings:
     level: 1
     collapsed: true
   -
+    id: ba-borders-heading
+    title: Borders & Radius
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: ba-sharp-corners
+    title: Sharp Corners
+    description: Remove all border radius (zero radius everywhere)
+    type: class-toggle
+    default: true
+  -
+    id: ba-border-width
+    title: Border Width
+    description: Base border width for dividers, tabs, and modals
+    type: variable-number-slider
+    default: 2
+    min: 0
+    max: 4
+    step: 1
+    format: px
+  -
+    id: ba-visible-dividers
+    title: Visible Workspace Dividers
+    description: Show borders between workspace panes
+    type: class-toggle
+    default: true
+  -
+    id: ba-visible-tab-outlines
+    title: Visible Tab Outlines
+    description: Show borders around tabs
+    type: class-toggle
+    default: true
+  -
+    id: ba-modal-borders
+    title: Modal Borders
+    description: Add visible borders to modal dialogs
+    type: class-toggle
+    default: true
+  -
+    id: ba-typography-heading
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: ba-uppercase-headings
+    title: Uppercase Headings
+    description: Transform all headings to uppercase
+    type: class-toggle
+    default: true
+  -
+    id: ba-heavy-headings
+    title: Heavy Heading Weight
+    description: Set all headings to weight 900
+    type: class-toggle
+    default: true
+  -
+    id: ba-bold-modifier
+    title: Bold Modifier
+    description: Extra weight added to bold text (0 = normal bold)
+    type: variable-number-slider
+    default: 200
+    min: 0
+    max: 300
+    step: 50
+  -
+    id: ba-monospace-ui
+    title: Monospace UI Font
+    description: Use monospace font for the interface
+    type: class-toggle
+    default: false
+  -
+    id: ba-shadows-heading
+    title: Shadows & Accents
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: ba-shadow-style
+    title: Shadow Style
+    description: Shadow style for callouts, modals, menus, and popovers
+    type: class-select
+    allowEmpty: true
+    default: ba-shadow-hatched
+    options:
+      -
+        label: Hard Offset
+        value: ba-shadow-hard
+      -
+        label: Hatched
+        value: ba-shadow-hatched
+  -
+    id: ba-shadow-offset
+    title: Shadow Offset
+    description: Distance of shadow from element
+    type: variable-number-slider
+    default: 4
+    min: 2
+    max: 8
+    step: 1
+    format: px
+  -
+    id: ba-thick-blockquote-border
+    title: Thick Blockquote Border
+    description: Thicker left border on blockquotes
+    type: class-toggle
+    default: true
+  -
+    id: ba-bold-links
+    title: Bold Link Underlines
+    description: Thicker underlines on links
+    type: class-toggle
+    default: true
+  -
+    id: ba-brutalist-tags
+    title: Brutalist Tags
+    description: Dotted border tags with transparent background
+    type: class-toggle
+    default: true
+  -
+    id: ba-callout-accent-border
+    title: Callout Accent Border
+    description: Colored left border on callouts
+    type: class-toggle
+    default: true
+  -
+    id: ba-scrollbars-heading
+    title: Scrollbars
+    type: heading
+    level: 2
+    collapsed: true
+  -
     id: hide-scrollbars
     title: Hide Scrollbars
     description: Hide scrollbars until hover (desktop only)

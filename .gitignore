@@ -1,9 +1,3 @@
-# Generated per-theme CSS files (build artifacts from core generate)
-# All land in templates/ alongside the template and style-settings
-templates/*.css
-!templates/style-settings.css
-!templates/interface/
-
 tmp_*
 
 # OS
