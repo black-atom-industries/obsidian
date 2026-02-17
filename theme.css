@@ -2,142 +2,131 @@
 name: "Black Atom :: Variants"
 id: black-atom-variants
 settings:
-  -
-    id: dark-theme-variant
-    title: Dark Theme Variant
-    description: Choose your Black Atom variant for dark mode
-    type: class-select
-    allowEmpty: false
-    default: black-atom-default-dark
-    options:
-      -
-        label: "Default: Dark"
-        value: black-atom-default-dark
-      -
-        label: "Default: Dark Dimmed"
-        value: black-atom-default-dark-dimmed
-      -
-        label: "Stations: Engineering"
-        value: black-atom-stations-engineering
-      -
-        label: "Stations: Operations"
-        value: black-atom-stations-operations
-      -
-        label: "JPN: Koyo Yoru"
-        value: black-atom-jpn-koyo-yoru
-      -
-        label: "JPN: Tsuki Yoru"
-        value: black-atom-jpn-tsuki-yoru
-      -
-        label: "JPN: Murasaki Yoru"
-        value: black-atom-jpn-murasaki-yoru
-      -
-        label: "Terra: Spring Night"
-        value: black-atom-terra-spring-night
-      -
-        label: "Terra: Summer Night"
-        value: black-atom-terra-summer-night
-      -
-        label: "Terra: Fall Night"
-        value: black-atom-terra-fall-night
-      -
-        label: "Terra: Winter Night"
-        value: black-atom-terra-winter-night
-      -
-        label: "MNML: Clay Dark"
-        value: black-atom-mnml-clay-dark
-      -
-        label: "MNML: Orange Dark"
-        value: black-atom-mnml-orange-dark
-      -
-        label: "MNML: Mikado Dark"
-        value: black-atom-mnml-mikado-dark
-      -
-        label: "MNML: 47 Dark"
-        value: black-atom-mnml-47-dark
-      -
-        label: "MNML: E-Ink Dark"
-        value: black-atom-mnml-eink-dark
-      -
-        label: "MNML: Mono Dark"
-        value: black-atom-mnml-mono-dark
-  -
-    id: light-theme-variant
-    title: Light Theme Variant
-    description: Choose your Black Atom variant for light mode
-    type: class-select
-    allowEmpty: false
-    default: black-atom-default-light
-    options:
-      -
-        label: "Default: Light"
-        value: black-atom-default-light
-      -
-        label: "Default: Light Dimmed"
-        value: black-atom-default-light-dimmed
-      -
-        label: "Stations: Medical"
-        value: black-atom-stations-medical
-      -
-        label: "Stations: Research"
-        value: black-atom-stations-research
-      -
-        label: "JPN: Koyo Hiru"
-        value: black-atom-jpn-koyo-hiru
-      -
-        label: "Terra: Spring Day"
-        value: black-atom-terra-spring-day
-      -
-        label: "Terra: Summer Day"
-        value: black-atom-terra-summer-day
-      -
-        label: "Terra: Fall Day"
-        value: black-atom-terra-fall-day
-      -
-        label: "Terra: Winter Day"
-        value: black-atom-terra-winter-day
-      -
-        label: "MNML: Clay Light"
-        value: black-atom-mnml-clay-light
-      -
-        label: "MNML: Orange Light"
-        value: black-atom-mnml-orange-light
-      -
-        label: "MNML: Osman Light"
-        value: black-atom-mnml-osman-light
-      -
-        label: "MNML: Mikado Light"
-        value: black-atom-mnml-mikado-light
-      -
-        label: "MNML: 47 Light"
-        value: black-atom-mnml-47-light
-      -
-        label: "MNML: E-Ink Light"
-        value: black-atom-mnml-eink-light
-      -
-        label: "MNML: Mono Light"
-        value: black-atom-mnml-mono-light
-      -
-        label: "MNML: ITA Light"
-        value: black-atom-mnml-ita-light
+    - id: dark-theme-variant
+      title: Dark Theme Variant
+      description: Choose your Black Atom variant for dark mode
+      type: class-select
+      allowEmpty: false
+      default: black-atom-default-dark
+      options:
+          - label: "Default: Dark"
+            value: black-atom-default-dark
+          - label: "Default: Dark Dimmed"
+            value: black-atom-default-dark-dimmed
+          - label: "Stations: Engineering"
+            value: black-atom-stations-engineering
+          - label: "Stations: Operations"
+            value: black-atom-stations-operations
+          - label: "JPN: Koyo Yoru"
+            value: black-atom-jpn-koyo-yoru
+          - label: "JPN: Tsuki Yoru"
+            value: black-atom-jpn-tsuki-yoru
+          - label: "JPN: Murasaki Yoru"
+            value: black-atom-jpn-murasaki-yoru
+          - label: "Terra: Spring Night"
+            value: black-atom-terra-spring-night
+          - label: "Terra: Summer Night"
+            value: black-atom-terra-summer-night
+          - label: "Terra: Fall Night"
+            value: black-atom-terra-fall-night
+          - label: "Terra: Winter Night"
+            value: black-atom-terra-winter-night
+          - label: "MNML: Clay Dark"
+            value: black-atom-mnml-clay-dark
+          - label: "MNML: Orange Dark"
+            value: black-atom-mnml-orange-dark
+          - label: "MNML: Mikado Dark"
+            value: black-atom-mnml-mikado-dark
+          - label: "MNML: 47 Dark"
+            value: black-atom-mnml-47-dark
+          - label: "MNML: E-Ink Dark"
+            value: black-atom-mnml-eink-dark
+          - label: "MNML: Mono Dark"
+            value: black-atom-mnml-mono-dark
+    - id: light-theme-variant
+      title: Light Theme Variant
+      description: Choose your Black Atom variant for light mode
+      type: class-select
+      allowEmpty: false
+      default: black-atom-default-light
+      options:
+          - label: "Default: Light"
+            value: black-atom-default-light
+          - label: "Default: Light Dimmed"
+            value: black-atom-default-light-dimmed
+          - label: "Stations: Medical"
+            value: black-atom-stations-medical
+          - label: "Stations: Research"
+            value: black-atom-stations-research
+          - label: "JPN: Koyo Hiru"
+            value: black-atom-jpn-koyo-hiru
+          - label: "Terra: Spring Day"
+            value: black-atom-terra-spring-day
+          - label: "Terra: Summer Day"
+            value: black-atom-terra-summer-day
+          - label: "Terra: Fall Day"
+            value: black-atom-terra-fall-day
+          - label: "Terra: Winter Day"
+            value: black-atom-terra-winter-day
+          - label: "MNML: Clay Light"
+            value: black-atom-mnml-clay-light
+          - label: "MNML: Orange Light"
+            value: black-atom-mnml-orange-light
+          - label: "MNML: Osman Light"
+            value: black-atom-mnml-osman-light
+          - label: "MNML: Mikado Light"
+            value: black-atom-mnml-mikado-light
+          - label: "MNML: 47 Light"
+            value: black-atom-mnml-47-light
+          - label: "MNML: E-Ink Light"
+            value: black-atom-mnml-eink-light
+          - label: "MNML: Mono Light"
+            value: black-atom-mnml-mono-light
+          - label: "MNML: ITA Light"
+            value: black-atom-mnml-ita-light
 */
 
 /* @settings
 name: "Black Atom :: UI"
 id: black-atom-ui
 settings:
-  -
-    id: ba-scrollbars-heading
-    title: Scrollbars
-    type: heading
-    level: 2
-    collapsed: true
-  -
-    id: hide-scrollbars
-    title: Hide Scrollbars
-    description: Hide scrollbars until hover (desktop only)
-    type: class-toggle
-    default: false
+- id: ba-borders-heading
+  title: Borders & Radius
+  type: heading
+  level: 2
+  collapsed: true
+- id: ba-border-radius
+  title: Border Radius
+  description: Global border radius preset
+  type: class-select
+  allowEmpty: true
+  default: ba-radius-none
+  options:
+      - label: "None (0px)"
+        value: ba-radius-none
+      - label: "Small (4px)"
+        value: ba-radius-small
+      - label: "Medium (8px)"
+        value: ba-radius-medium
+- id: ba-border-width
+  title: Border Width
+  description: Base border width for UI elements
+  type: variable-number-slider
+  default: 6
+  min: 0
+  max: 8
+  step: 2
+  format: px
+- id: ba-scrollbars-heading
+  title: Scrollbars
+  type: heading
+  level: 2
+  collapsed: true
+- id: hide-scrollbars
+  title: Hide Scrollbars
+  description: Hide scrollbars (desktop only)
+  type: class-toggle
+  default: false
 */
 
 /* Black Atom — Dark Dimmed */
@@ -4626,6 +4615,51 @@ settings:
     --nav-item-color-hover: #e2e8f2;
     --nav-item-color-active: #fba952;
     --nav-item-color-selected: #e2e8f2;
+}
+
+/* ============================================================
+   Black Atom — Borders & Radius
+   ============================================================ */
+
+/* --- Border Radius: None (sharp corners) --- */
+body.ba-radius-none {
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --radius-xl: 0px;
+    --tab-radius: 0px;
+    --tab-radius-active: 0px;
+    --tab-curve: 0px;
+    --input-radius: 0px;
+    --modal-radius: 0px;
+    --callout-radius: 0px;
+    --tag-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --checkbox-radius: 0px;
+    --prompt-radius: 0px;
+}
+
+/* --- Border Radius: Small (Obsidian defaults) --- */
+body.ba-radius-small {
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+}
+
+/* --- Border Radius: Medium (softer) --- */
+body.ba-radius-medium {
+    --radius-s: 8px;
+    --radius-m: 12px;
+    --radius-l: 16px;
+}
+
+/* --- Border Width (targeted structural borders only) --- */
+body {
+    --divider-width: var(--ba-border-width, 6px);
+    --tab-outline-width: var(--ba-border-width, 6px);
+    --modal-border-width: var(--ba-border-width, 6px);
+    --callout-border-width: var(--ba-border-width, 6px);
 }
 
 /* ============================================================
