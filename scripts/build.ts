@@ -95,6 +95,10 @@ async function build(): Promise<void> {
     // Write output
     await Deno.writeTextFile(config.paths.output, parts.join("\n\n") + "\n");
     console.log(`Build complete: ${config.paths.output}`);
+
+    // Format generated files
+    console.log("Formatting...");
+    await run(["deno", "fmt", "."]);
 }
 
 build();

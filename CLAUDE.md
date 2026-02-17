@@ -4,8 +4,8 @@
 
 This is the Obsidian adapter for Black Atom themes. It uses a pure CSS template
 approach -- no SCSS, no npm dependencies. The core CLI processes Eta templates
-to generate per-theme CSS files, and `build.sh` assembles them into a single
-`theme.css`.
+to generate per-theme CSS files, and a Deno build script assembles them into a
+single `theme.css`.
 
 ## Repository Structure
 
@@ -14,22 +14,26 @@ to generate per-theme CSS files, and `build.sh` assembles them into a single
 ├── .editorconfig
 ├── .github/
 ├── .gitignore
-├── black-atom-adapter.json    # Adapter config for core CLI
-├── build.sh                   # Build script (generate + concatenate)
-├── CLAUDE.md                  # Project guide
-├── docs/plans/                # Design & implementation plans
-├── manifest.json              # Obsidian theme metadata
-├── README.md                  # User-facing docs
-├── templates/
-│   ├── default/
-│   │   └── collection.template.css  # Eta template for Default collection
-│   ├── interface/                   # Static interface CSS (not Eta-processed)
-│   │   ├── scrollbars.css
-│   │   ├── borders.css
-│   │   ├── typography.css
-│   │   └── shadows-accents.css
-│   └── style-settings.css           # Style Settings plugin config
-└── theme.css                  # Generated output (committed)
+├── black-atom-adapter.json        # Adapter config for core CLI
+├── CLAUDE.md                      # Project guide
+├── deno.json                      # Deno tasks (build, dev, fmt, lint)
+├── docs/plans/                    # Design & implementation plans
+├── manifest.json                  # Obsidian theme metadata
+├── README.md                      # User-facing docs
+├── scripts/
+│   ├── build.ts                   # Build script
+│   └── config.ts                  # Build configuration
+├── styles/
+│   ├── variants.settings.yaml     # Theme variant dropdowns (Style Settings)
+│   └── ui/                        # UI customization CSS + settings sidecars
+│       ├── borders.css
+│       ├── borders.settings.yaml
+│       ├── scrollbars.css
+│       └── scrollbars.settings.yaml
+├── themes/
+│   ├── collection.template.css    # Shared Eta template (all collections)
+│   └── *.css                      # Generated per-theme files (gitignored)
+└── theme.css                      # Final output (committed)
 ```
 
 ## How the Adapter Pattern Works
@@ -37,10 +41,11 @@ to generate per-theme CSS files, and `build.sh` assembles them into a single
 1. `black-atom-core generate` reads `black-atom-adapter.json`
 2. For each collection, it processes the Eta template once per theme, injecting
    the theme object
-3. Generated CSS files land next to the template (e.g.
-   `templates/default/black-atom-default-dark.css`)
-4. `build.sh` concatenates `templates/style-settings.css` + all generated CSS
-   files + `templates/interface/*.css` into `theme.css`
+3. Generated CSS files land in `themes/` (e.g.
+   `themes/black-atom-default-dark.css`)
+4. The build script assembles `styles/variants.settings.yaml` +
+   `styles/ui/*.settings.yaml` + all generated theme CSS + `styles/ui/*.css`
+   into `theme.css`
 
 The `black-atom-adapter.json` maps collections to templates and lists their
 themes:
@@ -49,7 +54,7 @@ themes:
 {
     "collections": {
         "default": {
-            "template": "templates/default/collection.template.css",
+            "template": "themes/collection.template.css",
             "themes": [
                 "black-atom-default-dark",
                 "black-atom-default-dark-dimmed",
@@ -101,9 +106,9 @@ by the core CLI.
 
 ## Development Workflow
 
-1. Edit the template (`templates/default/collection.template.css`),
-   `templates/style-settings.css`, or files in `templates/interface/`
-2. Run `./build.sh`
+1. Edit the template (`themes/collection.template.css`), settings YAML in
+   `styles/`, or UI CSS in `styles/ui/`
+2. Run `deno task dev` for watch mode, or `deno task build` for a one-off build
 3. Reload Obsidian to see changes
 
 ### Symlink Setup
@@ -119,13 +124,16 @@ ln -s ~/repos/black-atom-industries/obsidian/manifest.json ~/path/to/vault/.obsi
 
 ## Adding New Collections
 
-1. Create a new template directory:
-   `templates/<collection-name>/collection.template.css`
-2. Add the collection to `black-atom-adapter.json` with its template path and
-   theme keys
-3. Add the new theme variants to `templates/style-settings.css`
-4. Run `./build.sh`
+1. Add the collection to `black-atom-adapter.json` with its template path and
+   theme keys (use `themes/collection.template.css` for the shared template)
+2. Add the new theme variants to `styles/variants.settings.yaml`
+3. Run `deno task build`
 
 ## Commands
 
-- `./build.sh` -- Full build (generate tokens + assemble theme.css)
+- `deno task build` -- Full build (generate tokens + assemble theme.css +
+  format)
+- `deno task dev` -- Watch mode (rebuilds on template/style changes)
+- `deno task fmt` -- Format all files
+- `deno task fmt:check` -- Check formatting
+- `deno task lint` -- Lint all files

@@ -1,6 +1,7 @@
 {
     "tasks": {
-        "build": "deno run --allow-read --allow-write --allow-run scripts/build.ts && deno fmt .",
+        "build": "deno run --allow-read --allow-write --allow-run scripts/build.ts",
+        "dev": "deno run --watch=themes/collection.template.css,styles/ --allow-read --allow-write --allow-run scripts/build.ts",
         "fmt": "deno fmt .",
         "fmt:check": "deno fmt --check .",
         "lint": "deno lint ."
