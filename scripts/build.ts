@@ -50,7 +50,7 @@ async function build(): Promise<void> {
 
   // Step 1: Generate per-theme CSS from templates
   console.log("Generating theme tokens...");
-  await run(["black-atom-core", "generate"]);
+  await run(["deno", "run", "-A", "jsr:@black-atom/core/cli", "generate"]);
 
   const parts: string[] = [];
 
