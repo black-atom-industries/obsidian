@@ -1,3 +1,4 @@
+
 /* Black Atom — MNM ∷ E-Ink Light */
 .theme-light.black-atom-mnml-eink-light {
   /* Foundation: Base Colors */
@@ -14,6 +15,7 @@
   --color-base-60: #3d3d3d;
   --color-base-70: #292929;
   --color-base-100: #161616;
+
 
   /* Extended Colors */
   --color-red: #a4a4a4;

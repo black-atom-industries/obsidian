@@ -1,3 +1,4 @@
+
 /* Black Atom — Light Dimmed */
 .theme-light.black-atom-default-light-dimmed {
   /* Foundation: Base Colors */
@@ -14,6 +15,7 @@
   --color-base-60: #3c3d3e;
   --color-base-70: #313334;
   --color-base-100: #232425;
+
 
   /* Extended Colors */
   --color-red: #9dadb9;

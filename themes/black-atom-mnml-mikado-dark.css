@@ -1,3 +1,4 @@
+
 /* Black Atom — MNM ∷ Mikado Dark */
 .theme-dark.black-atom-mnml-mikado-dark {
   /* Foundation: Base Colors */
@@ -14,6 +15,7 @@
   --color-base-60: #d2dae3;
   --color-base-70: #e2ebf3;
   --color-base-100: #f8fafd;
+
 
   /* Extended Colors */
   --color-red: #8ab2dc;
@@ -61,7 +63,7 @@
   --text-on-accent-inverted: #e2ebf3;
   --text-error: #f86c59;
   --text-warning: #f8ac3d;
-  --text-success: #4eba65;
+  --text-success: #4EBA65;
   --text-selection: #2a435d;
   --text-highlight-bg: #2a435d;
 
