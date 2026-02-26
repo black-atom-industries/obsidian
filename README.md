@@ -30,9 +30,10 @@ switch between theme variants:
 
 ## Development
 
-This adapter uses a pure CSS template approach. [Black Atom Core](https://jsr.io/@black-atom/core)
-processes Eta templates to generate per-theme CSS, and `build.sh` assembles
-them into `theme.css`. You need [Deno](https://deno.land/) installed.
+This adapter uses a pure CSS template approach.
+[Black Atom Core](https://jsr.io/@black-atom/core) processes Eta templates to
+generate per-theme CSS, and `build.sh` assembles them into `theme.css`. You need
+[Deno](https://deno.land/) installed.
 
 ```bash
 git clone https://github.com/black-atom-industries/obsidian.git

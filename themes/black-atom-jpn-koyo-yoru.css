@@ -3,10 +3,10 @@
 .theme-dark.black-atom-jpn-koyo-yoru {
   /* Foundation: Base Colors */
 
-  --color-base-00: #291d2e;
-  --color-base-05: #35293a;
-  --color-base-10: #413446;
-  --color-base-20: #4d4053;
+  --color-base-00: #1c1121;
+  --color-base-05: #261a2a;
+  --color-base-10: #3a2d3f;
+  --color-base-20: #4a3d50;
   --color-base-25: #605872;
   --color-base-30: #76718f;
   --color-base-35: #8d89a8;
@@ -36,22 +36,22 @@
   --color-pink-rgb: 208, 140, 99;
 
   /* Backgrounds */
-  --background-primary: #35293a;
-  --background-primary-alt: #413446;
-  --background-secondary: #291d2e;
-  --background-secondary-alt: #291d2e;
-  --background-modifier-hover: #413446;
-  --background-modifier-active-hover: #413446;
-  --background-modifier-border: #413446;
-  --background-modifier-border-hover: #413446;
+  --background-primary: #261a2a;
+  --background-primary-alt: #3a2d3f;
+  --background-secondary: #1c1121;
+  --background-secondary-alt: #1c1121;
+  --background-modifier-hover: #3a2d3f;
+  --background-modifier-active-hover: #3a2d3f;
+  --background-modifier-border: #3a2d3f;
+  --background-modifier-border-hover: #3a2d3f;
   --background-modifier-border-focus: #edaa4b;
-  --background-modifier-error-rgb: 90, 60, 87;
-  --background-modifier-error: #5a3c57;
-  --background-modifier-error-hover: #5a3c57;
-  --background-modifier-success-rgb: 65, 69, 99;
-  --background-modifier-success: #414563;
-  --background-modifier-message: #4f4257;
-  --background-modifier-form-field: #35293a;
+  --background-modifier-error-rgb: 78, 48, 74;
+  --background-modifier-error: #4e304a;
+  --background-modifier-error-hover: #4e304a;
+  --background-modifier-success-rgb: 54, 57, 86;
+  --background-modifier-success: #363956;
+  --background-modifier-message: #43364a;
+  --background-modifier-form-field: #261a2a;
 
   /* Text */
   --text-normal: #fbcaa4;
@@ -59,17 +59,17 @@
   --text-faint: #8d89a8;
   --text-accent: #edaa4b;
   --text-accent-hover: #edaa4b;
-  --text-on-accent: #35293a;
+  --text-on-accent: #261a2a;
   --text-on-accent-inverted: #fbcaa4;
   --text-error: #e47889;
   --text-warning: #edaa4b;
   --text-success: #5db28d;
-  --text-selection: #4d4053;
-  --text-highlight-bg: #4d4053;
+  --text-selection: #4a3d50;
+  --text-highlight-bg: #4a3d50;
 
   /* Interactive */
-  --interactive-normal: #35293a;
-  --interactive-hover: #413446;
+  --interactive-normal: #261a2a;
+  --interactive-hover: #3a2d3f;
   --interactive-accent: #edaa4b;
   --interactive-accent-hover: #edaa4b;
 
@@ -102,30 +102,30 @@
   --code-string: #5db28d;
   --code-tag: #edaa4b;
   --code-value: #958aab;
-  --code-background: #291d2e;
+  --code-background: #1c1121;
 
   /* Tags */
   --tag-color: #edaa4b;
   --tag-color-hover: #edaa4b;
-  --tag-background: #413446;
-  --tag-background-hover: #413446;
+  --tag-background: #3a2d3f;
+  --tag-background-hover: #3a2d3f;
 
   /* Graph */
-  --graph-line: #413446;
+  --graph-line: #3a2d3f;
   --graph-node: #edaa4b;
   --graph-node-focused: #edaa4b;
   --graph-node-tag: #7ea99c;
   --graph-node-attachment: #5db28d;
 
   /* Scrollbar */
-  --scrollbar-bg: #35293a;
-  --scrollbar-thumb-bg: #413446;
+  --scrollbar-bg: #261a2a;
+  --scrollbar-thumb-bg: #3a2d3f;
   --scrollbar-active-thumb-bg: #9c98b3;
 
   /* Nav */
-  --nav-item-background-hover: #413446;
-  --nav-item-background-active: #413446;
-  --nav-item-background-selected: #4d4053;
+  --nav-item-background-hover: #3a2d3f;
+  --nav-item-background-active: #3a2d3f;
+  --nav-item-background-selected: #4a3d50;
   --nav-item-color: #fbcaa4;
   --nav-item-color-hover: #fbcaa4;
   --nav-item-color-active: #edaa4b;
