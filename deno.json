@@ -1,7 +1,10 @@
 {
   "tasks": {
+    "generate": "deno run -A jsr:@black-atom/core/cli generate",
+    "postGenerate": "deno run --allow-read --allow-write scripts/postGenerate.ts",
     "build": "deno run --allow-read --allow-write --allow-run scripts/build.ts",
-    "dev": "deno run --watch=themes/collection.template.css,styles/ --allow-read --allow-write --allow-run scripts/build.ts",
+    "dev": "deno run -A jsr:@black-atom/core/cli generate --watch",
+    "update": "deno cache --reload jsr:@black-atom/core/cli",
     "fmt": "deno fmt .",
     "fmt:check": "deno fmt --check .",
     "lint": "deno lint ."
