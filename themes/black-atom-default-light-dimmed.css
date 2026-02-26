@@ -18,14 +18,14 @@
 
 
   /* Extended Colors */
-  --color-red: #9dadb9;
-  --color-red-rgb: 157, 173, 185;
+  --color-red: #6d7d88;
+  --color-red-rgb: 109, 125, 136;
   --color-orange: #8595a0;
   --color-orange-rgb: 133, 149, 160;
   --color-yellow: #8595a0;
   --color-yellow-rgb: 133, 149, 160;
-  --color-green: #8595a0;
-  --color-green-rgb: 133, 149, 160;
+  --color-green: #9dadb9;
+  --color-green-rgb: 157, 173, 185;
   --color-cyan: #50a648;
   --color-cyan-rgb: 80, 166, 72;
   --color-blue: #6d7d88;
@@ -115,7 +115,7 @@
   --graph-node: #50a648;
   --graph-node-focused: #50a648;
   --graph-node-tag: #50a648;
-  --graph-node-attachment: #8595a0;
+  --graph-node-attachment: #9dadb9;
 
   /* Scrollbar */
   --scrollbar-bg: #eef0f2;

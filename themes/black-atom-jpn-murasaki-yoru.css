@@ -77,9 +77,9 @@
   --h1-color: #e6a318;
   --h2-color: #e6a318;
   --h3-color: #e6a318;
-  --h4-color: #c9b1cb;
-  --h5-color: #c9b1cb;
-  --h6-color: #c9b1cb;
+  --h4-color: #946996;
+  --h5-color: #946996;
+  --h6-color: #946996;
 
   /* Markup */
   --bold-color: #e6a318;
@@ -98,7 +98,7 @@
   --code-keyword: #ec6eaa;
   --code-operator: #38a6cd;
   --code-property: #71c0db;
-  --code-punctuation: #c9b1cb;
+  --code-punctuation: #946996;
   --code-string: #6dc29f;
   --code-tag: #e6a318;
   --code-value: #38a6cd;
