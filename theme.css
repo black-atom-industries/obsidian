@@ -687,22 +687,22 @@ settings:
 
 
   /* Extended Colors */
-  --color-red: #db7070;
-  --color-red-rgb: 219, 112, 112;
-  --color-orange: #de8641;
-  --color-orange-rgb: 222, 134, 65;
-  --color-yellow: #ea9d34;
-  --color-yellow-rgb: 234, 157, 52;
-  --color-green: #52ad82;
-  --color-green-rgb: 82, 173, 130;
-  --color-cyan: #6aaf9a;
-  --color-cyan-rgb: 106, 175, 154;
-  --color-blue: #9175a3;
-  --color-blue-rgb: 145, 117, 163;
-  --color-purple: #f0a274;
-  --color-purple-rgb: 240, 162, 116;
-  --color-pink: #ec935f;
-  --color-pink-rgb: 236, 147, 95;
+  --color-red: #db6371;
+  --color-red-rgb: 219, 99, 113;
+  --color-orange: #f1771e;
+  --color-orange-rgb: 241, 119, 30;
+  --color-yellow: #ed9a00;
+  --color-yellow-rgb: 237, 154, 0;
+  --color-green: #3aa85b;
+  --color-green-rgb: 58, 168, 91;
+  --color-cyan: #00ab93;
+  --color-cyan-rgb: 0, 171, 147;
+  --color-blue: #9e77dc;
+  --color-blue-rgb: 158, 119, 220;
+  --color-purple: #f88f4f;
+  --color-purple-rgb: 248, 143, 79;
+  --color-pink: #f2943c;
+  --color-pink-rgb: 242, 148, 60;
 
   /* Backgrounds */
   --background-primary: #fef2e1;
@@ -713,78 +713,78 @@ settings:
   --background-modifier-active-hover: #f8e7d0;
   --background-modifier-border: #fff5e5;
   --background-modifier-border-hover: #f8e7d0;
-  --background-modifier-border-focus: #ea9d34;
-  --background-modifier-error-rgb: 245, 212, 184;
-  --background-modifier-error: #f5d4b8;
-  --background-modifier-error-hover: #f5d4b8;
-  --background-modifier-success-rgb: 228, 221, 186;
-  --background-modifier-success: #e4ddba;
-  --background-modifier-message: #edcfc2;
+  --background-modifier-border-focus: #ed9a00;
+  --background-modifier-error-rgb: 246, 210, 180;
+  --background-modifier-error: #f6d2b4;
+  --background-modifier-error-hover: #f6d2b4;
+  --background-modifier-success-rgb: 229, 218, 176;
+  --background-modifier-success: #e5dab0;
+  --background-modifier-message: #fccebd;
   --background-modifier-form-field: #fef2e1;
 
   /* Text */
   --text-normal: #3a2e3b;
   --text-muted: #b19b7c;
   --text-faint: #d1ba9b;
-  --text-accent: #ea9d34;
-  --text-accent-hover: #ea9d34;
+  --text-accent: #ed9a00;
+  --text-accent-hover: #ed9a00;
   --text-on-accent: #fef2e1;
   --text-on-accent-inverted: #3a2e3b;
-  --text-error: #db7070;
-  --text-warning: #ea9d34;
-  --text-success: #52ad82;
+  --text-error: #db6371;
+  --text-warning: #ed9a00;
+  --text-success: #3aa85b;
   --text-selection: #f8e7d0;
   --text-highlight-bg: #f8e7d0;
 
   /* Interactive */
   --interactive-normal: #fef2e1;
   --interactive-hover: #f8e7d0;
-  --interactive-accent: #ea9d34;
-  --interactive-accent-hover: #ea9d34;
+  --interactive-accent: #ed9a00;
+  --interactive-accent-hover: #ed9a00;
 
   /* Headings */
-  --h1-color: #ea9d34;
-  --h2-color: #ea9d34;
-  --h3-color: #ea9d34;
+  --h1-color: #ed9a00;
+  --h2-color: #ed9a00;
+  --h3-color: #ed9a00;
   --h4-color: #725a73;
   --h5-color: #725a73;
   --h6-color: #725a73;
 
   /* Markup */
-  --bold-color: #ea9d34;
-  --italic-color: #ea9d34;
-  --blockquote-border-color: #52ad82;
-  --link-color: #52ad82;
-  --link-color-hover: #52ad82;
-  --link-external-color: #52ad82;
-  --link-external-color-hover: #52ad82;
+  --bold-color: #ed9a00;
+  --italic-color: #ed9a00;
+  --blockquote-border-color: #3aa85b;
+  --link-color: #3aa85b;
+  --link-color-hover: #3aa85b;
+  --link-external-color: #3aa85b;
+  --link-external-color-hover: #3aa85b;
 
   /* Code / Syntax Highlighting */
-  --code-normal: #9175a3;
+  --code-normal: #9e77dc;
   --code-comment: #725a73;
-  --code-function: #ea9d34;
-  --code-important: #f0a274;
-  --code-keyword: #f0a274;
-  --code-operator: #aa6f83;
-  --code-property: #9175a3;
+  --code-function: #ed9a00;
+  --code-important: #f88f4f;
+  --code-keyword: #f88f4f;
+  --code-operator: #d1649c;
+  --code-property: #9e77dc;
   --code-punctuation: #725a73;
-  --code-string: #52ad82;
-  --code-tag: #ea9d34;
-  --code-value: #aa6f83;
+  --code-string: #3aa85b;
+  --code-tag: #ed9a00;
+  --code-value: #d1649c;
   --code-background: #f8e7d0;
 
   /* Tags */
-  --tag-color: #ea9d34;
-  --tag-color-hover: #ea9d34;
+  --tag-color: #ed9a00;
+  --tag-color-hover: #ed9a00;
   --tag-background: #f8e7d0;
   --tag-background-hover: #fff5e5;
 
   /* Graph */
   --graph-line: #fff5e5;
-  --graph-node: #ea9d34;
-  --graph-node-focused: #ea9d34;
-  --graph-node-tag: #6aaf9a;
-  --graph-node-attachment: #52ad82;
+  --graph-node: #ed9a00;
+  --graph-node-focused: #ed9a00;
+  --graph-node-tag: #00ab93;
+  --graph-node-attachment: #3aa85b;
 
   /* Scrollbar */
   --scrollbar-bg: #fef2e1;
@@ -797,7 +797,7 @@ settings:
   --nav-item-background-selected: #f8e7d0;
   --nav-item-color: #3a2e3b;
   --nav-item-color-hover: #3a2e3b;
-  --nav-item-color-active: #ea9d34;
+  --nav-item-color-active: #ed9a00;
   --nav-item-color-selected: #3a2e3b;
 }
 
@@ -821,8 +821,8 @@ settings:
 
 
   /* Extended Colors */
-  --color-red: #fd8296;
-  --color-red-rgb: 253, 130, 150;
+  --color-red: #fe838f;
+  --color-red-rgb: 254, 131, 143;
   --color-orange: #f88f4f;
   --color-orange-rgb: 248, 143, 79;
   --color-yellow: #e49e22;
@@ -848,9 +848,9 @@ settings:
   --background-modifier-border: #3a2d3f;
   --background-modifier-border-hover: #3a2d3f;
   --background-modifier-border-focus: #e49e22;
-  --background-modifier-error-rgb: 82, 50, 78;
-  --background-modifier-error: #52324e;
-  --background-modifier-error-hover: #52324e;
+  --background-modifier-error-rgb: 83, 50, 78;
+  --background-modifier-error: #53324e;
+  --background-modifier-error-hover: #53324e;
   --background-modifier-success-rgb: 55, 61, 90;
   --background-modifier-success: #373d5a;
   --background-modifier-message: #473850;
@@ -864,7 +864,7 @@ settings:
   --text-accent-hover: #e49e22;
   --text-on-accent: #261a2a;
   --text-on-accent-inverted: #ead2b2;
-  --text-error: #fd8296;
+  --text-error: #fe838f;
   --text-warning: #e49e22;
   --text-success: #7fc08c;
   --text-selection: #4a3d50;
@@ -899,12 +899,12 @@ settings:
   --code-function: #e49e22;
   --code-important: #e19b73;
   --code-keyword: #e19b73;
-  --code-operator: #9685b7;
+  --code-operator: #d39bb5;
   --code-property: #b5a4d7;
   --code-punctuation: #b19b7c;
   --code-string: #7fc08c;
   --code-tag: #e49e22;
-  --code-value: #9685b7;
+  --code-value: #d39bb5;
   --code-background: #1c1121;
 
   /* Tags */
