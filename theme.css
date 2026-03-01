@@ -86,7 +86,6 @@ settings:
         value: black-atom-mnml-ita-light
 */
 
-
 /* @settings
 name: "Black Atom :: UI"
 id: black-atom-ui
@@ -130,8 +129,6 @@ settings:
   default: false
 */
 
-
-
 /* Black Atom — Dark Dimmed */
 .theme-dark.black-atom-default-dark-dimmed {
   /* Foundation: Base Colors */
@@ -148,7 +145,6 @@ settings:
   --color-base-60: #b6c7d3;
   --color-base-70: #c9dae7;
   --color-base-100: #d6e7f4;
-
 
   /* Extended Colors */
   --color-red: #91a1ad;
@@ -265,11 +261,8 @@ settings:
   --nav-item-color-selected: #c9dae7;
 }
 
-
-/* Black Atom — Dark */
-.theme-dark.black-atom-default-dark {
-  /* Foundation: Base Colors */
-
+/* Fallback: Black Atom — Dark (no Style Settings plugin) */
+.theme-dark {
   --color-base-00: #080f0f;
   --color-base-05: #111817;
   --color-base-10: #1a2121;
@@ -282,7 +275,6 @@ settings:
   --color-base-60: #b6c7d3;
   --color-base-70: #c9dae7;
   --color-base-100: #d6e7f4;
-
 
   /* Extended Colors */
   --color-red: #91a1ad;
@@ -399,6 +391,137 @@ settings:
   --nav-item-color-selected: #c9dae7;
 }
 
+/* Black Atom — Dark */
+.theme-dark.black-atom-default-dark {
+  /* Foundation: Base Colors */
+
+  --color-base-00: #080f0f;
+  --color-base-05: #111817;
+  --color-base-10: #1a2121;
+  --color-base-20: #232a2a;
+  --color-base-25: #495762;
+  --color-base-30: #5c6b76;
+  --color-base-35: #73838e;
+  --color-base-40: #91a1ad;
+  --color-base-50: #a3b4c0;
+  --color-base-60: #b6c7d3;
+  --color-base-70: #c9dae7;
+  --color-base-100: #d6e7f4;
+
+  /* Extended Colors */
+  --color-red: #91a1ad;
+  --color-red-rgb: 145, 161, 173;
+  --color-orange: #73838e;
+  --color-orange-rgb: 115, 131, 142;
+  --color-yellow: #73838e;
+  --color-yellow-rgb: 115, 131, 142;
+  --color-green: #91a1ad;
+  --color-green-rgb: 145, 161, 173;
+  --color-cyan: #afdca9;
+  --color-cyan-rgb: 175, 220, 169;
+  --color-blue: #5c6b76;
+  --color-blue-rgb: 92, 107, 118;
+  --color-purple: #8fbc8a;
+  --color-purple-rgb: 143, 188, 138;
+  --color-pink: #8fbc8a;
+  --color-pink-rgb: 143, 188, 138;
+
+  /* Backgrounds */
+  --background-primary: #111817;
+  --background-primary-alt: #1a2121;
+  --background-secondary: #080f0f;
+  --background-secondary-alt: #080f0f;
+  --background-modifier-hover: #1a2121;
+  --background-modifier-active-hover: #1a2121;
+  --background-modifier-border: #1a2121;
+  --background-modifier-border-hover: #1a2121;
+  --background-modifier-border-focus: #afdca9;
+  --background-modifier-error-rgb: 20, 48, 65;
+  --background-modifier-error: #143041;
+  --background-modifier-error-hover: #143041;
+  --background-modifier-success-rgb: 10, 52, 48;
+  --background-modifier-success: #0a3430;
+  --background-modifier-message: #123434;
+  --background-modifier-form-field: #111817;
+
+  /* Text */
+  --text-normal: #c9dae7;
+  --text-muted: #73838e;
+  --text-faint: #5c6b76;
+  --text-accent: #afdca9;
+  --text-accent-hover: #afdca9;
+  --text-on-accent: #111817;
+  --text-on-accent-inverted: #c9dae7;
+  --text-error: #e97292;
+  --text-warning: #dd881b;
+  --text-success: #4cb86a;
+  --text-selection: #232a2a;
+  --text-highlight-bg: #232a2a;
+
+  /* Interactive */
+  --interactive-normal: #111817;
+  --interactive-hover: #1a2121;
+  --interactive-accent: #afdca9;
+  --interactive-accent-hover: #afdca9;
+
+  /* Headings */
+  --h1-color: #afdca9;
+  --h2-color: #afdca9;
+  --h3-color: #afdca9;
+  --h4-color: #a3b4c0;
+  --h5-color: #a3b4c0;
+  --h6-color: #a3b4c0;
+
+  /* Markup */
+  --bold-color: #afdca9;
+  --italic-color: #afdca9;
+  --blockquote-border-color: #73838e;
+  --link-color: #8fbc8a;
+  --link-color-hover: #8fbc8a;
+  --link-external-color: #8fbc8a;
+  --link-external-color-hover: #8fbc8a;
+
+  /* Code / Syntax Highlighting */
+  --code-normal: #a3b4c0;
+  --code-comment: #73838e;
+  --code-function: #afdca9;
+  --code-important: #ccc5ff;
+  --code-keyword: #ccc5ff;
+  --code-operator: #b6c7d3;
+  --code-property: #73838e;
+  --code-punctuation: #a3b4c0;
+  --code-string: #8fbc8a;
+  --code-tag: #afdca9;
+  --code-value: #a3b4c0;
+  --code-background: #080f0f;
+
+  /* Tags */
+  --tag-color: #afdca9;
+  --tag-color-hover: #afdca9;
+  --tag-background: #1a2121;
+  --tag-background-hover: #1a2121;
+
+  /* Graph */
+  --graph-line: #1a2121;
+  --graph-node: #afdca9;
+  --graph-node-focused: #afdca9;
+  --graph-node-tag: #afdca9;
+  --graph-node-attachment: #91a1ad;
+
+  /* Scrollbar */
+  --scrollbar-bg: #111817;
+  --scrollbar-thumb-bg: #1a2121;
+  --scrollbar-active-thumb-bg: #73838e;
+
+  /* Nav */
+  --nav-item-background-hover: #1a2121;
+  --nav-item-background-active: #1a2121;
+  --nav-item-background-selected: #232a2a;
+  --nav-item-color: #c9dae7;
+  --nav-item-color-hover: #c9dae7;
+  --nav-item-color-active: #afdca9;
+  --nav-item-color-selected: #c9dae7;
+}
 
 /* Black Atom — Light Dimmed */
 .theme-light.black-atom-default-light-dimmed {
@@ -416,7 +539,6 @@ settings:
   --color-base-60: #3c3d3e;
   --color-base-70: #313334;
   --color-base-100: #232425;
-
 
   /* Extended Colors */
   --color-red: #6d7d88;
@@ -533,11 +655,8 @@ settings:
   --nav-item-color-selected: #313334;
 }
 
-
-/* Black Atom — Light */
-.theme-light.black-atom-default-light {
-  /* Foundation: Base Colors */
-
+/* Fallback: Black Atom — Light (no Style Settings plugin) */
+.theme-light {
   --color-base-00: #f9fcff;
   --color-base-05: #eceff1;
   --color-base-10: #dbdee1;
@@ -550,7 +669,6 @@ settings:
   --color-base-60: #313334;
   --color-base-70: #28292a;
   --color-base-100: #191b1c;
-
 
   /* Extended Colors */
   --color-red: #788288;
@@ -667,6 +785,137 @@ settings:
   --nav-item-color-selected: #28292a;
 }
 
+/* Black Atom — Light */
+.theme-light.black-atom-default-light {
+  /* Foundation: Base Colors */
+
+  --color-base-00: #f9fcff;
+  --color-base-05: #eceff1;
+  --color-base-10: #dbdee1;
+  --color-base-20: #d3d6d9;
+  --color-base-25: #bbbec1;
+  --color-base-30: #999fa4;
+  --color-base-35: #788288;
+  --color-base-40: #576570;
+  --color-base-50: #3c3d3e;
+  --color-base-60: #313334;
+  --color-base-70: #28292a;
+  --color-base-100: #191b1c;
+
+  /* Extended Colors */
+  --color-red: #788288;
+  --color-red-rgb: 120, 130, 136;
+  --color-orange: #999fa4;
+  --color-orange-rgb: 153, 159, 164;
+  --color-yellow: #999fa4;
+  --color-yellow-rgb: 153, 159, 164;
+  --color-green: #bbbec1;
+  --color-green-rgb: 187, 190, 193;
+  --color-cyan: #60a259;
+  --color-cyan-rgb: 96, 162, 89;
+  --color-blue: #788288;
+  --color-blue-rgb: 120, 130, 136;
+  --color-purple: #2f8728;
+  --color-purple-rgb: 47, 135, 40;
+  --color-pink: #2f8728;
+  --color-pink-rgb: 47, 135, 40;
+
+  /* Backgrounds */
+  --background-primary: #eceff1;
+  --background-primary-alt: #f9fcff;
+  --background-secondary: #dbdee1;
+  --background-secondary-alt: #dbdee1;
+  --background-modifier-hover: #dbdee1;
+  --background-modifier-active-hover: #dbdee1;
+  --background-modifier-border: #f9fcff;
+  --background-modifier-border-hover: #dbdee1;
+  --background-modifier-border-focus: #60a259;
+  --background-modifier-error-rgb: 205, 211, 252;
+  --background-modifier-error: #cdd3fc;
+  --background-modifier-error-hover: #cdd3fc;
+  --background-modifier-success-rgb: 179, 222, 237;
+  --background-modifier-success: #b3deed;
+  --background-modifier-message: #c8dbea;
+  --background-modifier-form-field: #eceff1;
+
+  /* Text */
+  --text-normal: #28292a;
+  --text-muted: #576570;
+  --text-faint: #999fa4;
+  --text-accent: #60a259;
+  --text-accent-hover: #60a259;
+  --text-on-accent: #dbdee1;
+  --text-on-accent-inverted: #28292a;
+  --text-error: #c70050;
+  --text-warning: #ba2000;
+  --text-success: #008400;
+  --text-selection: #d3d6d9;
+  --text-highlight-bg: #d3d6d9;
+
+  /* Interactive */
+  --interactive-normal: #eceff1;
+  --interactive-hover: #dbdee1;
+  --interactive-accent: #60a259;
+  --interactive-accent-hover: #60a259;
+
+  /* Headings */
+  --h1-color: #60a259;
+  --h2-color: #60a259;
+  --h3-color: #60a259;
+  --h4-color: #3c3d3e;
+  --h5-color: #3c3d3e;
+  --h6-color: #3c3d3e;
+
+  /* Markup */
+  --bold-color: #60a259;
+  --italic-color: #60a259;
+  --blockquote-border-color: #788288;
+  --link-color: #2f8728;
+  --link-color-hover: #2f8728;
+  --link-external-color: #2f8728;
+  --link-external-color-hover: #2f8728;
+
+  /* Code / Syntax Highlighting */
+  --code-normal: #3c3d3e;
+  --code-comment: #788288;
+  --code-function: #60a259;
+  --code-important: #8f81d6;
+  --code-keyword: #8f81d6;
+  --code-operator: #313334;
+  --code-property: #788288;
+  --code-punctuation: #3c3d3e;
+  --code-string: #2f8728;
+  --code-tag: #60a259;
+  --code-value: #3c3d3e;
+  --code-background: #dbdee1;
+
+  /* Tags */
+  --tag-color: #60a259;
+  --tag-color-hover: #60a259;
+  --tag-background: #dbdee1;
+  --tag-background-hover: #f9fcff;
+
+  /* Graph */
+  --graph-line: #f9fcff;
+  --graph-node: #60a259;
+  --graph-node-focused: #60a259;
+  --graph-node-tag: #60a259;
+  --graph-node-attachment: #bbbec1;
+
+  /* Scrollbar */
+  --scrollbar-bg: #eceff1;
+  --scrollbar-thumb-bg: #f9fcff;
+  --scrollbar-active-thumb-bg: #576570;
+
+  /* Nav */
+  --nav-item-background-hover: #dbdee1;
+  --nav-item-background-active: #f9fcff;
+  --nav-item-background-selected: #d3d6d9;
+  --nav-item-color: #28292a;
+  --nav-item-color-hover: #28292a;
+  --nav-item-color-active: #60a259;
+  --nav-item-color-selected: #28292a;
+}
 
 /* Black Atom — JPN ∷ Koyo Hiru */
 .theme-light.black-atom-jpn-koyo-hiru {
@@ -685,24 +934,23 @@ settings:
   --color-base-70: #3a2e3b;
   --color-base-100: #29212a;
 
-
   /* Extended Colors */
-  --color-red: #db6371;
-  --color-red-rgb: 219, 99, 113;
-  --color-orange: #f1771e;
-  --color-orange-rgb: 241, 119, 30;
-  --color-yellow: #ed9a00;
-  --color-yellow-rgb: 237, 154, 0;
-  --color-green: #3aa85b;
-  --color-green-rgb: 58, 168, 91;
-  --color-cyan: #00ab93;
-  --color-cyan-rgb: 0, 171, 147;
-  --color-blue: #9e77dc;
-  --color-blue-rgb: 158, 119, 220;
-  --color-purple: #f88f4f;
-  --color-purple-rgb: 248, 143, 79;
-  --color-pink: #f2943c;
-  --color-pink-rgb: 242, 148, 60;
+  --color-red: #db7070;
+  --color-red-rgb: 219, 112, 112;
+  --color-orange: #de8641;
+  --color-orange-rgb: 222, 134, 65;
+  --color-yellow: #ea9d34;
+  --color-yellow-rgb: 234, 157, 52;
+  --color-green: #52ad82;
+  --color-green-rgb: 82, 173, 130;
+  --color-cyan: #6aaf9a;
+  --color-cyan-rgb: 106, 175, 154;
+  --color-blue: #9175a3;
+  --color-blue-rgb: 145, 117, 163;
+  --color-purple: #f0a274;
+  --color-purple-rgb: 240, 162, 116;
+  --color-pink: #ec935f;
+  --color-pink-rgb: 236, 147, 95;
 
   /* Backgrounds */
   --background-primary: #fef2e1;
@@ -713,78 +961,78 @@ settings:
   --background-modifier-active-hover: #f8e7d0;
   --background-modifier-border: #fff5e5;
   --background-modifier-border-hover: #f8e7d0;
-  --background-modifier-border-focus: #ed9a00;
-  --background-modifier-error-rgb: 246, 210, 180;
-  --background-modifier-error: #f6d2b4;
-  --background-modifier-error-hover: #f6d2b4;
-  --background-modifier-success-rgb: 229, 218, 176;
-  --background-modifier-success: #e5dab0;
-  --background-modifier-message: #fccebd;
+  --background-modifier-border-focus: #ea9d34;
+  --background-modifier-error-rgb: 245, 212, 184;
+  --background-modifier-error: #f5d4b8;
+  --background-modifier-error-hover: #f5d4b8;
+  --background-modifier-success-rgb: 228, 221, 186;
+  --background-modifier-success: #e4ddba;
+  --background-modifier-message: #edcfc2;
   --background-modifier-form-field: #fef2e1;
 
   /* Text */
   --text-normal: #3a2e3b;
   --text-muted: #b19b7c;
   --text-faint: #d1ba9b;
-  --text-accent: #ed9a00;
-  --text-accent-hover: #ed9a00;
+  --text-accent: #ea9d34;
+  --text-accent-hover: #ea9d34;
   --text-on-accent: #fef2e1;
   --text-on-accent-inverted: #3a2e3b;
-  --text-error: #db6371;
-  --text-warning: #ed9a00;
-  --text-success: #3aa85b;
+  --text-error: #db7070;
+  --text-warning: #ea9d34;
+  --text-success: #52ad82;
   --text-selection: #f8e7d0;
   --text-highlight-bg: #f8e7d0;
 
   /* Interactive */
   --interactive-normal: #fef2e1;
   --interactive-hover: #f8e7d0;
-  --interactive-accent: #ed9a00;
-  --interactive-accent-hover: #ed9a00;
+  --interactive-accent: #ea9d34;
+  --interactive-accent-hover: #ea9d34;
 
   /* Headings */
-  --h1-color: #ed9a00;
-  --h2-color: #ed9a00;
-  --h3-color: #ed9a00;
+  --h1-color: #ea9d34;
+  --h2-color: #ea9d34;
+  --h3-color: #ea9d34;
   --h4-color: #725a73;
   --h5-color: #725a73;
   --h6-color: #725a73;
 
   /* Markup */
-  --bold-color: #ed9a00;
-  --italic-color: #ed9a00;
-  --blockquote-border-color: #3aa85b;
-  --link-color: #3aa85b;
-  --link-color-hover: #3aa85b;
-  --link-external-color: #3aa85b;
-  --link-external-color-hover: #3aa85b;
+  --bold-color: #ea9d34;
+  --italic-color: #ea9d34;
+  --blockquote-border-color: #52ad82;
+  --link-color: #52ad82;
+  --link-color-hover: #52ad82;
+  --link-external-color: #52ad82;
+  --link-external-color-hover: #52ad82;
 
   /* Code / Syntax Highlighting */
-  --code-normal: #9e77dc;
+  --code-normal: #9175a3;
   --code-comment: #725a73;
-  --code-function: #ed9a00;
-  --code-important: #f88f4f;
-  --code-keyword: #f88f4f;
-  --code-operator: #d1649c;
-  --code-property: #9e77dc;
+  --code-function: #ea9d34;
+  --code-important: #f0a274;
+  --code-keyword: #f0a274;
+  --code-operator: #aa6f83;
+  --code-property: #9175a3;
   --code-punctuation: #725a73;
-  --code-string: #3aa85b;
-  --code-tag: #ed9a00;
-  --code-value: #d1649c;
+  --code-string: #52ad82;
+  --code-tag: #ea9d34;
+  --code-value: #aa6f83;
   --code-background: #f8e7d0;
 
   /* Tags */
-  --tag-color: #ed9a00;
-  --tag-color-hover: #ed9a00;
+  --tag-color: #ea9d34;
+  --tag-color-hover: #ea9d34;
   --tag-background: #f8e7d0;
   --tag-background-hover: #fff5e5;
 
   /* Graph */
   --graph-line: #fff5e5;
-  --graph-node: #ed9a00;
-  --graph-node-focused: #ed9a00;
-  --graph-node-tag: #00ab93;
-  --graph-node-attachment: #3aa85b;
+  --graph-node: #ea9d34;
+  --graph-node-focused: #ea9d34;
+  --graph-node-tag: #6aaf9a;
+  --graph-node-attachment: #52ad82;
 
   /* Scrollbar */
   --scrollbar-bg: #fef2e1;
@@ -797,144 +1045,141 @@ settings:
   --nav-item-background-selected: #f8e7d0;
   --nav-item-color: #3a2e3b;
   --nav-item-color-hover: #3a2e3b;
-  --nav-item-color-active: #ed9a00;
+  --nav-item-color-active: #ea9d34;
   --nav-item-color-selected: #3a2e3b;
 }
-
 
 /* Black Atom — JPN ∷ Koyo Yoru */
 .theme-dark.black-atom-jpn-koyo-yoru {
   /* Foundation: Base Colors */
 
-  --color-base-00: #1c1121;
-  --color-base-05: #261a2a;
-  --color-base-10: #3a2d3f;
-  --color-base-20: #4a3d50;
-  --color-base-25: #59506a;
-  --color-base-30: #756c89;
-  --color-base-35: #927c5f;
-  --color-base-40: #b19b7c;
-  --color-base-50: #d1ba9b;
-  --color-base-60: #e1caaa;
-  --color-base-70: #ead2b2;
-  --color-base-100: #fae2c2;
-
+  --color-base-00: #291d2e;
+  --color-base-05: #35293a;
+  --color-base-10: #413446;
+  --color-base-20: #4d4053;
+  --color-base-25: #605872;
+  --color-base-30: #76718f;
+  --color-base-35: #8d89a8;
+  --color-base-40: #9c98b3;
+  --color-base-50: #dcaf87;
+  --color-base-60: #ecbd96;
+  --color-base-70: #fbcaa4;
+  --color-base-100: #ffdbbf;
 
   /* Extended Colors */
-  --color-red: #fe838f;
-  --color-red-rgb: 254, 131, 143;
-  --color-orange: #f88f4f;
-  --color-orange-rgb: 248, 143, 79;
-  --color-yellow: #e49e22;
-  --color-yellow-rgb: 228, 158, 34;
-  --color-green: #7fc08c;
-  --color-green-rgb: 127, 192, 140;
-  --color-cyan: #5cc3b0;
-  --color-cyan-rgb: 92, 195, 176;
-  --color-blue: #b5a4d7;
-  --color-blue-rgb: 181, 164, 215;
-  --color-purple: #e19b73;
-  --color-purple-rgb: 225, 155, 115;
-  --color-pink: #c07d55;
-  --color-pink-rgb: 192, 125, 85;
+  --color-red: #e47889;
+  --color-red-rgb: 228, 120, 137;
+  --color-orange: #fd9e66;
+  --color-orange-rgb: 253, 158, 102;
+  --color-yellow: #edaa4b;
+  --color-yellow-rgb: 237, 170, 75;
+  --color-green: #5db28d;
+  --color-green-rgb: 93, 178, 141;
+  --color-cyan: #7ea99c;
+  --color-cyan-rgb: 126, 169, 156;
+  --color-blue: #a298b9;
+  --color-blue-rgb: 162, 152, 185;
+  --color-purple: #eda77d;
+  --color-purple-rgb: 237, 167, 125;
+  --color-pink: #d08c63;
+  --color-pink-rgb: 208, 140, 99;
 
   /* Backgrounds */
-  --background-primary: #261a2a;
-  --background-primary-alt: #3a2d3f;
-  --background-secondary: #1c1121;
-  --background-secondary-alt: #1c1121;
-  --background-modifier-hover: #3a2d3f;
-  --background-modifier-active-hover: #3a2d3f;
-  --background-modifier-border: #3a2d3f;
-  --background-modifier-border-hover: #3a2d3f;
-  --background-modifier-border-focus: #e49e22;
-  --background-modifier-error-rgb: 83, 50, 78;
-  --background-modifier-error: #53324e;
-  --background-modifier-error-hover: #53324e;
-  --background-modifier-success-rgb: 55, 61, 90;
-  --background-modifier-success: #373d5a;
-  --background-modifier-message: #473850;
-  --background-modifier-form-field: #261a2a;
+  --background-primary: #35293a;
+  --background-primary-alt: #413446;
+  --background-secondary: #291d2e;
+  --background-secondary-alt: #291d2e;
+  --background-modifier-hover: #413446;
+  --background-modifier-active-hover: #413446;
+  --background-modifier-border: #413446;
+  --background-modifier-border-hover: #413446;
+  --background-modifier-border-focus: #edaa4b;
+  --background-modifier-error-rgb: 90, 60, 87;
+  --background-modifier-error: #5a3c57;
+  --background-modifier-error-hover: #5a3c57;
+  --background-modifier-success-rgb: 65, 69, 99;
+  --background-modifier-success: #414563;
+  --background-modifier-message: #4f4257;
+  --background-modifier-form-field: #35293a;
 
   /* Text */
-  --text-normal: #ead2b2;
-  --text-muted: #b19b7c;
-  --text-faint: #927c5f;
-  --text-accent: #e49e22;
-  --text-accent-hover: #e49e22;
-  --text-on-accent: #261a2a;
-  --text-on-accent-inverted: #ead2b2;
-  --text-error: #fe838f;
-  --text-warning: #e49e22;
-  --text-success: #7fc08c;
-  --text-selection: #4a3d50;
-  --text-highlight-bg: #4a3d50;
+  --text-normal: #fbcaa4;
+  --text-muted: #9c98b3;
+  --text-faint: #8d89a8;
+  --text-accent: #edaa4b;
+  --text-accent-hover: #edaa4b;
+  --text-on-accent: #35293a;
+  --text-on-accent-inverted: #fbcaa4;
+  --text-error: #e47889;
+  --text-warning: #edaa4b;
+  --text-success: #5db28d;
+  --text-selection: #4d4053;
+  --text-highlight-bg: #4d4053;
 
   /* Interactive */
-  --interactive-normal: #261a2a;
-  --interactive-hover: #3a2d3f;
-  --interactive-accent: #e49e22;
-  --interactive-accent-hover: #e49e22;
+  --interactive-normal: #35293a;
+  --interactive-hover: #413446;
+  --interactive-accent: #edaa4b;
+  --interactive-accent-hover: #edaa4b;
 
   /* Headings */
-  --h1-color: #e49e22;
-  --h2-color: #e49e22;
-  --h3-color: #e49e22;
-  --h4-color: #b19b7c;
-  --h5-color: #b19b7c;
-  --h6-color: #b19b7c;
+  --h1-color: #edaa4b;
+  --h2-color: #edaa4b;
+  --h3-color: #edaa4b;
+  --h4-color: #9c98b3;
+  --h5-color: #9c98b3;
+  --h6-color: #9c98b3;
 
   /* Markup */
-  --bold-color: #e49e22;
-  --italic-color: #e49e22;
-  --blockquote-border-color: #7fc08c;
-  --link-color: #7fc08c;
-  --link-color-hover: #7fc08c;
-  --link-external-color: #7fc08c;
-  --link-external-color-hover: #7fc08c;
+  --bold-color: #edaa4b;
+  --italic-color: #edaa4b;
+  --blockquote-border-color: #5db28d;
+  --link-color: #5db28d;
+  --link-color-hover: #5db28d;
+  --link-external-color: #5db28d;
+  --link-external-color-hover: #5db28d;
 
   /* Code / Syntax Highlighting */
-  --code-normal: #e1caaa;
-  --code-comment: #756c89;
-  --code-function: #e49e22;
-  --code-important: #e19b73;
-  --code-keyword: #e19b73;
-  --code-operator: #d39bb5;
-  --code-property: #b5a4d7;
-  --code-punctuation: #b19b7c;
-  --code-string: #7fc08c;
-  --code-tag: #e49e22;
-  --code-value: #d39bb5;
-  --code-background: #1c1121;
+  --code-normal: #ecbd96;
+  --code-comment: #605872;
+  --code-function: #edaa4b;
+  --code-important: #eda77d;
+  --code-keyword: #eda77d;
+  --code-operator: #958aab;
+  --code-property: #a298b9;
+  --code-punctuation: #9c98b3;
+  --code-string: #5db28d;
+  --code-tag: #edaa4b;
+  --code-value: #958aab;
+  --code-background: #291d2e;
 
   /* Tags */
-  --tag-color: #e49e22;
-  --tag-color-hover: #e49e22;
-  --tag-background: #3a2d3f;
-  --tag-background-hover: #3a2d3f;
+  --tag-color: #edaa4b;
+  --tag-color-hover: #edaa4b;
+  --tag-background: #413446;
+  --tag-background-hover: #413446;
 
   /* Graph */
-  --graph-line: #3a2d3f;
-  --graph-node: #e49e22;
-  --graph-node-focused: #e49e22;
-  --graph-node-tag: #5cc3b0;
-  --graph-node-attachment: #7fc08c;
+  --graph-line: #413446;
+  --graph-node: #edaa4b;
+  --graph-node-focused: #edaa4b;
+  --graph-node-tag: #7ea99c;
+  --graph-node-attachment: #5db28d;
 
   /* Scrollbar */
-  --scrollbar-bg: #261a2a;
-  --scrollbar-thumb-bg: #3a2d3f;
-  --scrollbar-active-thumb-bg: #b19b7c;
+  --scrollbar-bg: #35293a;
+  --scrollbar-thumb-bg: #413446;
+  --scrollbar-active-thumb-bg: #9c98b3;
 
   /* Nav */
-  --nav-item-background-hover: #3a2d3f;
-  --nav-item-background-active: #3a2d3f;
-  --nav-item-background-selected: #4a3d50;
-  --nav-item-color: #ead2b2;
-  --nav-item-color-hover: #ead2b2;
-  --nav-item-color-active: #e49e22;
-  --nav-item-color-selected: #ead2b2;
+  --nav-item-background-hover: #413446;
+  --nav-item-background-active: #413446;
+  --nav-item-background-selected: #4d4053;
+  --nav-item-color: #fbcaa4;
+  --nav-item-color-hover: #fbcaa4;
+  --nav-item-color-active: #edaa4b;
+  --nav-item-color-selected: #fbcaa4;
 }
-
 
 /* Black Atom — JPN ∷ Murasaki Yoru */
 .theme-dark.black-atom-jpn-murasaki-yoru {
@@ -952,7 +1197,6 @@ settings:
   --color-base-60: #c9b1cb;
   --color-base-70: #d4bfd6;
   --color-base-100: #e8dbe9;
-
 
   /* Extended Colors */
   --color-red: #f0635c;
@@ -1029,7 +1273,7 @@ settings:
 
   /* Code / Syntax Highlighting */
   --code-normal: #c9b1cb;
-  --code-comment: #7d5178;
+  --code-comment: #6d4769;
   --code-function: #e6a318;
   --code-important: #ec6eaa;
   --code-keyword: #ec6eaa;
@@ -1069,7 +1313,6 @@ settings:
   --nav-item-color-selected: #d4bfd6;
 }
 
-
 /* Black Atom — JPN ∷ Tsuki Yoru */
 .theme-dark.black-atom-jpn-tsuki-yoru {
   /* Foundation: Base Colors */
@@ -1086,7 +1329,6 @@ settings:
   --color-base-60: #cbcbcb;
   --color-base-70: #e6e6e6;
   --color-base-100: #ffffff;
-
 
   /* Extended Colors */
   --color-red: #f591b2;
@@ -1163,7 +1405,7 @@ settings:
 
   /* Code / Syntax Highlighting */
   --code-normal: #cbcbcb;
-  --code-comment: #69697f;
+  --code-comment: #4f4f61;
   --code-function: #eab899;
   --code-important: #aca1cf;
   --code-keyword: #aca1cf;
@@ -1203,7 +1445,6 @@ settings:
   --nav-item-color-selected: #e6e6e6;
 }
 
-
 /* Black Atom — MNML ∷ 47 Dark */
 .theme-dark.black-atom-mnml-47-dark {
   /* Foundation: Base Colors */
@@ -1220,7 +1461,6 @@ settings:
   --color-base-60: #f2daba;
   --color-base-70: #ffe7c7;
   --color-base-100: #feefdc;
-
 
   /* Extended Colors */
   --color-red: #98a485;
@@ -1337,7 +1577,6 @@ settings:
   --nav-item-color-selected: #ffe7c7;
 }
 
-
 /* Black Atom — MNML ∷ 47 Light */
 .theme-light.black-atom-mnml-47-light {
   /* Foundation: Base Colors */
@@ -1354,7 +1593,6 @@ settings:
   --color-base-60: #373d2f;
   --color-base-70: #20231b;
   --color-base-100: #151712;
-
 
   /* Extended Colors */
   --color-red: #98a485;
@@ -1471,7 +1709,6 @@ settings:
   --nav-item-color-selected: #20231b;
 }
 
-
 /* Black Atom — MNML ∷ Clay Dark */
 .theme-dark.black-atom-mnml-clay-dark {
   /* Foundation: Base Colors */
@@ -1488,7 +1725,6 @@ settings:
   --color-base-60: #d3cebc;
   --color-base-70: #e3decc;
   --color-base-100: #f3efdc;
-
 
   /* Extended Colors */
   --color-red: #b4ae9c;
@@ -1605,7 +1841,6 @@ settings:
   --nav-item-color-selected: #e3decc;
 }
 
-
 /* Black Atom — MNML ∷ Clay Light */
 .theme-light.black-atom-mnml-clay-light {
   /* Foundation: Base Colors */
@@ -1622,7 +1857,6 @@ settings:
   --color-base-60: #3e3a2f;
   --color-base-70: #322e22;
   --color-base-100: #252117;
-
 
   /* Extended Colors */
   --color-red: #888069;
@@ -1739,7 +1973,6 @@ settings:
   --nav-item-color-selected: #322e22;
 }
 
-
 /* Black Atom — MNML ∷ E-Ink Dark */
 .theme-dark.black-atom-mnml-eink-dark {
   /* Foundation: Base Colors */
@@ -1756,7 +1989,6 @@ settings:
   --color-base-60: #d1d1d1;
   --color-base-70: #dedede;
   --color-base-100: #ebebeb;
-
 
   /* Extended Colors */
   --color-red: #a4a4a4;
@@ -1873,7 +2105,6 @@ settings:
   --nav-item-color-selected: #dedede;
 }
 
-
 /* Black Atom — MNML ∷ E-Ink Light */
 .theme-light.black-atom-mnml-eink-light {
   /* Foundation: Base Colors */
@@ -1890,7 +2121,6 @@ settings:
   --color-base-60: #3d3d3d;
   --color-base-70: #292929;
   --color-base-100: #161616;
-
 
   /* Extended Colors */
   --color-red: #a4a4a4;
@@ -2007,7 +2237,6 @@ settings:
   --nav-item-color-selected: #292929;
 }
 
-
 /* Black Atom — MNML ∷ ITA Light */
 .theme-light.black-atom-mnml-ita-light {
   /* Foundation: Base Colors */
@@ -2024,7 +2253,6 @@ settings:
   --color-base-60: #2b2826;
   --color-base-70: #181614;
   --color-base-100: #0a0907;
-
 
   /* Extended Colors */
   --color-red: #c6c3c1;
@@ -2141,7 +2369,6 @@ settings:
   --nav-item-color-selected: #181614;
 }
 
-
 /* Black Atom — MNML ∷ Mikado Dark */
 .theme-dark.black-atom-mnml-mikado-dark {
   /* Foundation: Base Colors */
@@ -2158,7 +2385,6 @@ settings:
   --color-base-60: #d2dae3;
   --color-base-70: #e2ebf3;
   --color-base-100: #f8fafd;
-
 
   /* Extended Colors */
   --color-red: #8ab2dc;
@@ -2206,7 +2432,7 @@ settings:
   --text-on-accent-inverted: #e2ebf3;
   --text-error: #f86c59;
   --text-warning: #f8ac3d;
-  --text-success: #4EBA65;
+  --text-success: #4eba65;
   --text-selection: #2a435d;
   --text-highlight-bg: #2a435d;
 
@@ -2275,7 +2501,6 @@ settings:
   --nav-item-color-selected: #e2ebf3;
 }
 
-
 /* Black Atom — MNML ∷ Mikado Light */
 .theme-light.black-atom-mnml-mikado-light {
   /* Foundation: Base Colors */
@@ -2292,7 +2517,6 @@ settings:
   --color-base-60: #1c2b34;
   --color-base-70: #0f212d;
   --color-base-100: #121b21;
-
 
   /* Extended Colors */
   --color-red: #7b919d;
@@ -2409,7 +2633,6 @@ settings:
   --nav-item-color-selected: #0f212d;
 }
 
-
 /* Black Atom — MNML ∷ Mono Dark */
 .theme-dark.black-atom-mnml-mono-dark {
   /* Foundation: Base Colors */
@@ -2426,7 +2649,6 @@ settings:
   --color-base-60: #dad7d4;
   --color-base-70: #edeae8;
   --color-base-100: #fbf8f5;
-
 
   /* Extended Colors */
   --color-red: #a09e9b;
@@ -2543,7 +2765,6 @@ settings:
   --nav-item-color-selected: #edeae8;
 }
 
-
 /* Black Atom — MNML ∷ Mono Light */
 .theme-light.black-atom-mnml-mono-light {
   /* Foundation: Base Colors */
@@ -2560,7 +2781,6 @@ settings:
   --color-base-60: #2b2826;
   --color-base-70: #181614;
   --color-base-100: #0a0907;
-
 
   /* Extended Colors */
   --color-red: #c6c3c1;
@@ -2677,7 +2897,6 @@ settings:
   --nav-item-color-selected: #181614;
 }
 
-
 /* Black Atom — MNML ∷ Orange Dark */
 .theme-dark.black-atom-mnml-orange-dark {
   /* Foundation: Base Colors */
@@ -2694,7 +2913,6 @@ settings:
   --color-base-60: #cad3d5;
   --color-base-70: #d7e0e3;
   --color-base-100: #e4edf0;
-
 
   /* Extended Colors */
   --color-red: #9ea6a9;
@@ -2811,7 +3029,6 @@ settings:
   --nav-item-color-selected: #d7e0e3;
 }
 
-
 /* Black Atom — MNML ∷ Orange Light */
 .theme-light.black-atom-mnml-orange-light {
   /* Foundation: Base Colors */
@@ -2828,7 +3045,6 @@ settings:
   --color-base-60: #383e41;
   --color-base-70: #242a2c;
   --color-base-100: #111719;
-
 
   /* Extended Colors */
   --color-red: #9ea6a9;
@@ -2945,7 +3161,6 @@ settings:
   --nav-item-color-selected: #242a2c;
 }
 
-
 /* Black Atom — MNML ∷ Osman Light */
 .theme-light.black-atom-mnml-osman-light {
   /* Foundation: Base Colors */
@@ -2962,7 +3177,6 @@ settings:
   --color-base-60: #433c35;
   --color-base-70: #38312b;
   --color-base-100: #0e0a08;
-
 
   /* Extended Colors */
   --color-red: #f1342d;
@@ -3079,7 +3293,6 @@ settings:
   --nav-item-color-selected: #38312b;
 }
 
-
 /* Black Atom — Stations ∷ Engineering */
 .theme-dark.black-atom-stations-engineering {
   /* Foundation: Base Colors */
@@ -3096,7 +3309,6 @@ settings:
   --color-base-60: #c3eed9;
   --color-base-70: #d5f4e3;
   --color-base-100: #e8fbf0;
-
 
   /* Extended Colors */
   --color-red: #f08cb4;
@@ -3213,7 +3425,6 @@ settings:
   --nav-item-color-selected: #d5f4e3;
 }
 
-
 /* Black Atom — Stations ∷ Medical */
 .theme-light.black-atom-stations-medical {
   /* Foundation: Base Colors */
@@ -3230,7 +3441,6 @@ settings:
   --color-base-60: #384b42;
   --color-base-70: #2b3b33;
   --color-base-100: #22272f;
-
 
   /* Extended Colors */
   --color-red: #f472a0;
@@ -3347,7 +3557,6 @@ settings:
   --nav-item-color-selected: #2b3b33;
 }
 
-
 /* Black Atom — Stations ∷ Operations */
 .theme-dark.black-atom-stations-operations {
   /* Foundation: Base Colors */
@@ -3364,7 +3573,6 @@ settings:
   --color-base-60: #abe7ca;
   --color-base-70: #c1efd5;
   --color-base-100: #cef6de;
-
 
   /* Extended Colors */
   --color-red: #f08cb4;
@@ -3481,7 +3689,6 @@ settings:
   --nav-item-color-selected: #c1efd5;
 }
 
-
 /* Black Atom — Stations ∷ Research */
 .theme-light.black-atom-stations-research {
   /* Foundation: Base Colors */
@@ -3498,7 +3705,6 @@ settings:
   --color-base-60: #384b42;
   --color-base-70: #2b3b33;
   --color-base-100: #1e2229;
-
 
   /* Extended Colors */
   --color-red: #f472a0;
@@ -3615,7 +3821,6 @@ settings:
   --nav-item-color-selected: #2b3b33;
 }
 
-
 /* Black Atom — TERRA ∷ Fall Day */
 .theme-light.black-atom-terra-fall-day {
   /* Foundation: Base Colors */
@@ -3632,7 +3837,6 @@ settings:
   --color-base-60: #4f3222;
   --color-base-70: #422617;
   --color-base-100: #280e02;
-
 
   /* Extended Colors */
   --color-red: #bf4d3f;
@@ -3749,7 +3953,6 @@ settings:
   --nav-item-color-selected: #422617;
 }
 
-
 /* Black Atom — TERRA ∷ Fall Night */
 .theme-dark.black-atom-terra-fall-night {
   /* Foundation: Base Colors */
@@ -3766,7 +3969,6 @@ settings:
   --color-base-60: #d9b5a2;
   --color-base-70: #eac5b1;
   --color-base-100: #f7d6c5;
-
 
   /* Extended Colors */
   --color-red: #e87a69;
@@ -3883,7 +4085,6 @@ settings:
   --nav-item-color-selected: #eac5b1;
 }
 
-
 /* Black Atom — TERRA ∷ Spring Day */
 .theme-light.black-atom-terra-spring-day {
   /* Foundation: Base Colors */
@@ -3900,7 +4101,6 @@ settings:
   --color-base-60: #416353;
   --color-base-70: #385547;
   --color-base-100: #304a3f;
-
 
   /* Extended Colors */
   --color-red: #dd7e5d;
@@ -4017,7 +4217,6 @@ settings:
   --nav-item-color-selected: #385547;
 }
 
-
 /* Black Atom — TERRA ∷ Spring Night */
 .theme-dark.black-atom-terra-spring-night {
   /* Foundation: Base Colors */
@@ -4034,7 +4233,6 @@ settings:
   --color-base-60: #c3b8a4;
   --color-base-70: #d6d0c2;
   --color-base-100: #e0ddd1;
-
 
   /* Extended Colors */
   --color-red: #ba6e5f;
@@ -4151,7 +4349,6 @@ settings:
   --nav-item-color-selected: #d6d0c2;
 }
 
-
 /* Black Atom — TERRA ∷ Summer Day */
 .theme-light.black-atom-terra-summer-day {
   /* Foundation: Base Colors */
@@ -4168,7 +4365,6 @@ settings:
   --color-base-60: #1e4334;
   --color-base-70: #0d3025;
   --color-base-100: #012019;
-
 
   /* Extended Colors */
   --color-red: #d53d00;
@@ -4285,7 +4481,6 @@ settings:
   --nav-item-color-selected: #0d3025;
 }
 
-
 /* Black Atom — TERRA ∷ Summer Night */
 .theme-dark.black-atom-terra-summer-night {
   /* Foundation: Base Colors */
@@ -4302,7 +4497,6 @@ settings:
   --color-base-60: #dcd0b8;
   --color-base-70: #eae0cf;
   --color-base-100: #f7ede0;
-
 
   /* Extended Colors */
   --color-red: #e2805e;
@@ -4419,7 +4613,6 @@ settings:
   --nav-item-color-selected: #eae0cf;
 }
 
-
 /* Black Atom — TERRA ∷ Winter Day */
 .theme-light.black-atom-terra-winter-day {
   /* Foundation: Base Colors */
@@ -4436,7 +4629,6 @@ settings:
   --color-base-60: #2d3c4c;
   --color-base-70: #1e2a37;
   --color-base-100: #0e1721;
-
 
   /* Extended Colors */
   --color-red: #6e6ab2;
@@ -4553,7 +4745,6 @@ settings:
   --nav-item-color-selected: #1e2a37;
 }
 
-
 /* Black Atom — TERRA ∷ Winter Night */
 .theme-dark.black-atom-terra-winter-night {
   /* Foundation: Base Colors */
@@ -4570,7 +4761,6 @@ settings:
   --color-base-60: #d3dbe8;
   --color-base-70: #e2e8f2;
   --color-base-100: #eef2f9;
-
 
   /* Extended Colors */
   --color-red: #a8a6e5;

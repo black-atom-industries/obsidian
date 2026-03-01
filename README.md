@@ -22,36 +22,41 @@ Then in Obsidian: **Settings > Appearance > Theme > Black Atom**.
 
 ## Configuration
 
-Install the
-[Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin to
-switch between theme variants:
+The theme works out of the box with the **Default Dark** and **Default Light**
+variants.
 
-**Settings > Style Settings > Black Atom > Theme Variant**
+To switch between all available theme variants, install the
+[Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin
+(recommended):
+
+**Settings > Style Settings > Black Atom :: Variants**
 
 ## Development
 
 This adapter uses a pure CSS template approach.
 [Black Atom Core](https://jsr.io/@black-atom/core) processes Eta templates to
-generate per-theme CSS, and `build.sh` assembles them into `theme.css`. You need
-[Deno](https://deno.land/) installed.
+generate per-theme CSS, and a build script assembles them into `theme.css`. You
+need [Deno](https://deno.land/) installed.
 
 ```bash
 git clone https://github.com/black-atom-industries/obsidian.git
 cd obsidian
 ```
 
-Edit templates in `templates/`, then build:
+Edit templates in `themes/`, then build:
 
 ```bash
-./build.sh
+deno task build
 ```
 
-For faster iteration, symlink into your vault instead of copying:
+For live development, set your vault path in `.env` (see `.env.example`) and run
+watch mode. This copies the theme into your vault as **Black Atom Development**
+on every rebuild:
 
 ```bash
-mkdir -p ~/path/to/vault/.obsidian/themes/Black-Atom
-ln -s "$(pwd)/theme.css" ~/path/to/vault/.obsidian/themes/Black-Atom/theme.css
-ln -s "$(pwd)/manifest.json" ~/path/to/vault/.obsidian/themes/Black-Atom/manifest.json
+cp .env.example .env
+# Edit .env with your vault path
+deno task dev
 ```
 
 ## Related Projects
