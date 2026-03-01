@@ -9,7 +9,7 @@
  * Configure vault path in .env (see .env.example).
  */
 
-import { load } from "jsr:@std/dotenv";
+import { load } from "@std/dotenv";
 
 await load({ export: true });
 

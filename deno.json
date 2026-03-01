@@ -1,4 +1,7 @@
 {
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@0.225.6"
+  },
   "tasks": {
     "generate": "deno run -A jsr:@black-atom/core/cli generate",
     "postGenerate": "deno run --allow-read --allow-write scripts/postGenerate.ts",
