@@ -26,7 +26,8 @@ deno task lint         # Lint all files
 
 ## Obsidian CLI — Dev Tools
 
-The Obsidian CLI provides dev tools for inspecting and testing themes live without manually opening DevTools.
+The Obsidian CLI provides dev tools for inspecting and testing themes live
+without manually opening DevTools.
 
 ### Inspect CSS
 
@@ -91,21 +92,23 @@ obsidian command id="theme:switch" 2>/dev/null
 1. **Edit** template/styles in the repo
 2. **Build**: `deno task build`
 3. **Reload**: `obsidian reload 2>/dev/null` (if symlinked into vault)
-4. **Inspect**: Use `dev:css` / `dev:dom` to verify CSS variables resolve correctly
-5. **Screenshot**: `obsidian dev:screenshot path="tmp_screenshots/check.png"` for visual comparison
+4. **Inspect**: Use `dev:css` / `dev:dom` to verify CSS variables resolve
+   correctly
+5. **Screenshot**: `obsidian dev:screenshot path="tmp_screenshots/check.png"`
+   for visual comparison
 6. **Check errors**: `obsidian dev:errors 2>/dev/null`
 
 ## Key Files
 
-| File | Purpose |
-|------|---------|
-| `themes/collection.template.css` | Shared Eta template — main editing target |
-| `styles/variants.settings.yaml` | Theme variant dropdowns (Style Settings plugin) |
-| `styles/ui/*.css` | Static UI customizations (borders, scrollbars) |
-| `styles/ui/*.settings.yaml` | Style Settings sidecars for UI options |
-| `black-atom-adapter.json` | Adapter config — maps collections to templates/themes |
-| `theme.css` | Final assembled output (committed) |
-| `manifest.json` | Obsidian theme metadata |
+| File                             | Purpose                                               |
+| -------------------------------- | ----------------------------------------------------- |
+| `themes/collection.template.css` | Shared Eta template — main editing target             |
+| `styles/variants.settings.yaml`  | Theme variant dropdowns (Style Settings plugin)       |
+| `styles/ui/*.css`                | Static UI customizations (borders, scrollbars)        |
+| `styles/ui/*.settings.yaml`      | Style Settings sidecars for UI options                |
+| `black-atom-adapter.json`        | Adapter config — maps collections to templates/themes |
+| `theme.css`                      | Final assembled output (committed)                    |
+| `manifest.json`                  | Obsidian theme metadata                               |
 
 ## Theme Object Reference
 
@@ -113,7 +116,11 @@ Available in Eta templates as `theme`:
 
 - `theme.meta` — key, label, appearance, collection
 - `theme.primaries` — d10-d40, m10-m40, l10-l40 (dark/mid/light scale)
-- `theme.palette` — red, green, blue, yellow, cyan, magenta, darkYellow, darkMagenta
-- `theme.ui.bg` — default, panel, float, hover, active, selection, search, negative, positive, info, warn
-- `theme.ui.fg` — default, subtle, disabled, accent, contrast, negative, positive, warn
-- `theme.syntax` — keyword, func, string, variable, constant, comment, operator, property, punctuation, tag, markup.*
+- `theme.palette` — red, green, blue, yellow, cyan, magenta, darkYellow,
+  darkMagenta
+- `theme.ui.bg` — default, panel, float, hover, active, selection, search,
+  negative, positive, info, warn
+- `theme.ui.fg` — default, subtle, disabled, accent, contrast, negative,
+  positive, warn
+- `theme.syntax` — keyword, func, string, variable, constant, comment, operator,
+  property, punctuation, tag, markup.*

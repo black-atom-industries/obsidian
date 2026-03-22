@@ -1,4 +1,5 @@
 
+
 /* Black Atom — Light Dimmed */
 .theme-light.black-atom-default-light-dimmed {
   /* Foundation: Base Colors */
@@ -40,10 +41,10 @@
   --background-primary-alt: #f5f7f9;
   --background-secondary: #e4e6e8;
   --background-secondary-alt: #e4e6e8;
-  --background-modifier-hover: #e4e6e8;
-  --background-modifier-active-hover: #e4e6e8;
+  --background-modifier-hover: #dcdee0;
+  --background-modifier-active-hover: #dcdee0;
   --background-modifier-border: #f5f7f9;
-  --background-modifier-border-hover: #e4e6e8;
+  --background-modifier-border-hover: #dcdee0;
   --background-modifier-border-focus: #50a648;
   --background-modifier-error-rgb: 201, 207, 247;
   --background-modifier-error: #c9cff7;
@@ -69,7 +70,7 @@
 
   /* Interactive */
   --interactive-normal: #eef0f2;
-  --interactive-hover: #e4e6e8;
+  --interactive-hover: #dcdee0;
   --interactive-accent: #50a648;
   --interactive-accent-hover: #50a648;
 
@@ -107,7 +108,7 @@
   /* Tags */
   --tag-color: #50a648;
   --tag-color-hover: #50a648;
-  --tag-background: #e4e6e8;
+  --tag-background: #dcdee0;
   --tag-background-hover: #f5f7f9;
 
   /* Graph */
@@ -123,7 +124,7 @@
   --scrollbar-active-thumb-bg: #5c6b76;
 
   /* Nav */
-  --nav-item-background-hover: #e4e6e8;
+  --nav-item-background-hover: #dcdee0;
   --nav-item-background-active: #f5f7f9;
   --nav-item-background-selected: #dcdee0;
   --nav-item-color: #313334;

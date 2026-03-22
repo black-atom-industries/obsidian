@@ -86,6 +86,7 @@ settings:
         value: black-atom-mnml-ita-light
 */
 
+
 /* @settings
 name: "Black Atom :: UI"
 id: black-atom-ui
@@ -129,6 +130,9 @@ settings:
   default: false
 */
 
+
+
+
 /* Black Atom — Dark Dimmed */
 .theme-dark.black-atom-default-dark-dimmed {
   /* Foundation: Base Colors */
@@ -145,6 +149,7 @@ settings:
   --color-base-60: #b6c7d3;
   --color-base-70: #c9dae7;
   --color-base-100: #d6e7f4;
+
 
   /* Extended Colors */
   --color-red: #91a1ad;
@@ -261,8 +266,11 @@ settings:
   --nav-item-color-selected: #c9dae7;
 }
 
+
+
 /* Fallback: Black Atom — Dark (no Style Settings plugin) */
 .theme-dark {
+
   --color-base-00: #080f0f;
   --color-base-05: #111817;
   --color-base-10: #1a2121;
@@ -275,6 +283,7 @@ settings:
   --color-base-60: #b6c7d3;
   --color-base-70: #c9dae7;
   --color-base-100: #d6e7f4;
+
 
   /* Extended Colors */
   --color-red: #91a1ad;
@@ -353,8 +362,8 @@ settings:
   --code-normal: #a3b4c0;
   --code-comment: #73838e;
   --code-function: #afdca9;
-  --code-important: #ccc5ff;
-  --code-keyword: #ccc5ff;
+  --code-important: #826cd9;
+  --code-keyword: #826cd9;
   --code-operator: #b6c7d3;
   --code-property: #73838e;
   --code-punctuation: #a3b4c0;
@@ -390,6 +399,7 @@ settings:
   --nav-item-color-active: #afdca9;
   --nav-item-color-selected: #c9dae7;
 }
+
 
 /* Black Atom — Dark */
 .theme-dark.black-atom-default-dark {
@@ -408,6 +418,7 @@ settings:
   --color-base-70: #c9dae7;
   --color-base-100: #d6e7f4;
 
+
   /* Extended Colors */
   --color-red: #91a1ad;
   --color-red-rgb: 145, 161, 173;
@@ -485,8 +496,8 @@ settings:
   --code-normal: #a3b4c0;
   --code-comment: #73838e;
   --code-function: #afdca9;
-  --code-important: #ccc5ff;
-  --code-keyword: #ccc5ff;
+  --code-important: #826cd9;
+  --code-keyword: #826cd9;
   --code-operator: #b6c7d3;
   --code-property: #73838e;
   --code-punctuation: #a3b4c0;
@@ -523,6 +534,8 @@ settings:
   --nav-item-color-selected: #c9dae7;
 }
 
+
+
 /* Black Atom — Light Dimmed */
 .theme-light.black-atom-default-light-dimmed {
   /* Foundation: Base Colors */
@@ -539,6 +552,7 @@ settings:
   --color-base-60: #3c3d3e;
   --color-base-70: #313334;
   --color-base-100: #232425;
+
 
   /* Extended Colors */
   --color-red: #6d7d88;
@@ -563,10 +577,10 @@ settings:
   --background-primary-alt: #f5f7f9;
   --background-secondary: #e4e6e8;
   --background-secondary-alt: #e4e6e8;
-  --background-modifier-hover: #e4e6e8;
-  --background-modifier-active-hover: #e4e6e8;
+  --background-modifier-hover: #dcdee0;
+  --background-modifier-active-hover: #dcdee0;
   --background-modifier-border: #f5f7f9;
-  --background-modifier-border-hover: #e4e6e8;
+  --background-modifier-border-hover: #dcdee0;
   --background-modifier-border-focus: #50a648;
   --background-modifier-error-rgb: 201, 207, 247;
   --background-modifier-error: #c9cff7;
@@ -592,7 +606,7 @@ settings:
 
   /* Interactive */
   --interactive-normal: #eef0f2;
-  --interactive-hover: #e4e6e8;
+  --interactive-hover: #dcdee0;
   --interactive-accent: #50a648;
   --interactive-accent-hover: #50a648;
 
@@ -630,7 +644,7 @@ settings:
   /* Tags */
   --tag-color: #50a648;
   --tag-color-hover: #50a648;
-  --tag-background: #e4e6e8;
+  --tag-background: #dcdee0;
   --tag-background-hover: #f5f7f9;
 
   /* Graph */
@@ -646,7 +660,7 @@ settings:
   --scrollbar-active-thumb-bg: #5c6b76;
 
   /* Nav */
-  --nav-item-background-hover: #e4e6e8;
+  --nav-item-background-hover: #dcdee0;
   --nav-item-background-active: #f5f7f9;
   --nav-item-background-selected: #dcdee0;
   --nav-item-color: #313334;
@@ -655,8 +669,11 @@ settings:
   --nav-item-color-selected: #313334;
 }
 
+
+
 /* Fallback: Black Atom — Light (no Style Settings plugin) */
 .theme-light {
+
   --color-base-00: #f9fcff;
   --color-base-05: #eceff1;
   --color-base-10: #dbdee1;
@@ -669,6 +686,7 @@ settings:
   --color-base-60: #313334;
   --color-base-70: #28292a;
   --color-base-100: #191b1c;
+
 
   /* Extended Colors */
   --color-red: #788288;
@@ -693,10 +711,10 @@ settings:
   --background-primary-alt: #f9fcff;
   --background-secondary: #dbdee1;
   --background-secondary-alt: #dbdee1;
-  --background-modifier-hover: #dbdee1;
-  --background-modifier-active-hover: #dbdee1;
+  --background-modifier-hover: #d3d6d9;
+  --background-modifier-active-hover: #d3d6d9;
   --background-modifier-border: #f9fcff;
-  --background-modifier-border-hover: #dbdee1;
+  --background-modifier-border-hover: #d3d6d9;
   --background-modifier-border-focus: #60a259;
   --background-modifier-error-rgb: 205, 211, 252;
   --background-modifier-error: #cdd3fc;
@@ -722,7 +740,7 @@ settings:
 
   /* Interactive */
   --interactive-normal: #eceff1;
-  --interactive-hover: #dbdee1;
+  --interactive-hover: #d3d6d9;
   --interactive-accent: #60a259;
   --interactive-accent-hover: #60a259;
 
@@ -760,7 +778,7 @@ settings:
   /* Tags */
   --tag-color: #60a259;
   --tag-color-hover: #60a259;
-  --tag-background: #dbdee1;
+  --tag-background: #d3d6d9;
   --tag-background-hover: #f9fcff;
 
   /* Graph */
@@ -776,7 +794,7 @@ settings:
   --scrollbar-active-thumb-bg: #576570;
 
   /* Nav */
-  --nav-item-background-hover: #dbdee1;
+  --nav-item-background-hover: #d3d6d9;
   --nav-item-background-active: #f9fcff;
   --nav-item-background-selected: #d3d6d9;
   --nav-item-color: #28292a;
@@ -784,6 +802,7 @@ settings:
   --nav-item-color-active: #60a259;
   --nav-item-color-selected: #28292a;
 }
+
 
 /* Black Atom — Light */
 .theme-light.black-atom-default-light {
@@ -802,6 +821,7 @@ settings:
   --color-base-70: #28292a;
   --color-base-100: #191b1c;
 
+
   /* Extended Colors */
   --color-red: #788288;
   --color-red-rgb: 120, 130, 136;
@@ -825,10 +845,10 @@ settings:
   --background-primary-alt: #f9fcff;
   --background-secondary: #dbdee1;
   --background-secondary-alt: #dbdee1;
-  --background-modifier-hover: #dbdee1;
-  --background-modifier-active-hover: #dbdee1;
+  --background-modifier-hover: #d3d6d9;
+  --background-modifier-active-hover: #d3d6d9;
   --background-modifier-border: #f9fcff;
-  --background-modifier-border-hover: #dbdee1;
+  --background-modifier-border-hover: #d3d6d9;
   --background-modifier-border-focus: #60a259;
   --background-modifier-error-rgb: 205, 211, 252;
   --background-modifier-error: #cdd3fc;
@@ -854,7 +874,7 @@ settings:
 
   /* Interactive */
   --interactive-normal: #eceff1;
-  --interactive-hover: #dbdee1;
+  --interactive-hover: #d3d6d9;
   --interactive-accent: #60a259;
   --interactive-accent-hover: #60a259;
 
@@ -892,7 +912,7 @@ settings:
   /* Tags */
   --tag-color: #60a259;
   --tag-color-hover: #60a259;
-  --tag-background: #dbdee1;
+  --tag-background: #d3d6d9;
   --tag-background-hover: #f9fcff;
 
   /* Graph */
@@ -908,7 +928,7 @@ settings:
   --scrollbar-active-thumb-bg: #576570;
 
   /* Nav */
-  --nav-item-background-hover: #dbdee1;
+  --nav-item-background-hover: #d3d6d9;
   --nav-item-background-active: #f9fcff;
   --nav-item-background-selected: #d3d6d9;
   --nav-item-color: #28292a;
@@ -916,6 +936,8 @@ settings:
   --nav-item-color-active: #60a259;
   --nav-item-color-selected: #28292a;
 }
+
+
 
 /* Black Atom — JPN ∷ Koyo Hiru */
 .theme-light.black-atom-jpn-koyo-hiru {
@@ -934,23 +956,24 @@ settings:
   --color-base-70: #3a2e3b;
   --color-base-100: #29212a;
 
+
   /* Extended Colors */
-  --color-red: #db7070;
-  --color-red-rgb: 219, 112, 112;
-  --color-orange: #de8641;
-  --color-orange-rgb: 222, 134, 65;
-  --color-yellow: #ea9d34;
-  --color-yellow-rgb: 234, 157, 52;
-  --color-green: #52ad82;
-  --color-green-rgb: 82, 173, 130;
-  --color-cyan: #6aaf9a;
-  --color-cyan-rgb: 106, 175, 154;
-  --color-blue: #9175a3;
-  --color-blue-rgb: 145, 117, 163;
-  --color-purple: #f0a274;
-  --color-purple-rgb: 240, 162, 116;
-  --color-pink: #ec935f;
-  --color-pink-rgb: 236, 147, 95;
+  --color-red: #f5345e;
+  --color-red-rgb: 245, 52, 94;
+  --color-orange: #f1771e;
+  --color-orange-rgb: 241, 119, 30;
+  --color-yellow: #ed9a00;
+  --color-yellow-rgb: 237, 154, 0;
+  --color-green: #3aa85b;
+  --color-green-rgb: 58, 168, 91;
+  --color-cyan: #00ab93;
+  --color-cyan-rgb: 0, 171, 147;
+  --color-blue: #9e77dc;
+  --color-blue-rgb: 158, 119, 220;
+  --color-purple: #f88f4f;
+  --color-purple-rgb: 248, 143, 79;
+  --color-pink: #f2943c;
+  --color-pink-rgb: 242, 148, 60;
 
   /* Backgrounds */
   --background-primary: #fef2e1;
@@ -961,78 +984,78 @@ settings:
   --background-modifier-active-hover: #f8e7d0;
   --background-modifier-border: #fff5e5;
   --background-modifier-border-hover: #f8e7d0;
-  --background-modifier-border-focus: #ea9d34;
-  --background-modifier-error-rgb: 245, 212, 184;
-  --background-modifier-error: #f5d4b8;
-  --background-modifier-error-hover: #f5d4b8;
-  --background-modifier-success-rgb: 228, 221, 186;
-  --background-modifier-success: #e4ddba;
-  --background-modifier-message: #edcfc2;
+  --background-modifier-border-focus: #ed9a00;
+  --background-modifier-error-rgb: 254, 206, 166;
+  --background-modifier-error: #fecea6;
+  --background-modifier-error-hover: #fecea6;
+  --background-modifier-success-rgb: 229, 218, 176;
+  --background-modifier-success: #e5dab0;
+  --background-modifier-message: #fccebd;
   --background-modifier-form-field: #fef2e1;
 
   /* Text */
   --text-normal: #3a2e3b;
   --text-muted: #b19b7c;
   --text-faint: #d1ba9b;
-  --text-accent: #ea9d34;
-  --text-accent-hover: #ea9d34;
+  --text-accent: #ed9a00;
+  --text-accent-hover: #ed9a00;
   --text-on-accent: #fef2e1;
   --text-on-accent-inverted: #3a2e3b;
-  --text-error: #db7070;
-  --text-warning: #ea9d34;
-  --text-success: #52ad82;
+  --text-error: #f5345e;
+  --text-warning: #ed9a00;
+  --text-success: #3aa85b;
   --text-selection: #f8e7d0;
   --text-highlight-bg: #f8e7d0;
 
   /* Interactive */
   --interactive-normal: #fef2e1;
   --interactive-hover: #f8e7d0;
-  --interactive-accent: #ea9d34;
-  --interactive-accent-hover: #ea9d34;
+  --interactive-accent: #ed9a00;
+  --interactive-accent-hover: #ed9a00;
 
   /* Headings */
-  --h1-color: #ea9d34;
-  --h2-color: #ea9d34;
-  --h3-color: #ea9d34;
+  --h1-color: #ed9a00;
+  --h2-color: #ed9a00;
+  --h3-color: #ed9a00;
   --h4-color: #725a73;
   --h5-color: #725a73;
   --h6-color: #725a73;
 
   /* Markup */
-  --bold-color: #ea9d34;
-  --italic-color: #ea9d34;
-  --blockquote-border-color: #52ad82;
-  --link-color: #52ad82;
-  --link-color-hover: #52ad82;
-  --link-external-color: #52ad82;
-  --link-external-color-hover: #52ad82;
+  --bold-color: #ed9a00;
+  --italic-color: #ed9a00;
+  --blockquote-border-color: #3aa85b;
+  --link-color: #3aa85b;
+  --link-color-hover: #3aa85b;
+  --link-external-color: #3aa85b;
+  --link-external-color-hover: #3aa85b;
 
   /* Code / Syntax Highlighting */
-  --code-normal: #9175a3;
+  --code-normal: #9e77dc;
   --code-comment: #725a73;
-  --code-function: #ea9d34;
-  --code-important: #f0a274;
-  --code-keyword: #f0a274;
-  --code-operator: #aa6f83;
-  --code-property: #9175a3;
+  --code-function: #ed9a00;
+  --code-important: #f88f4f;
+  --code-keyword: #f88f4f;
+  --code-operator: #d1649c;
+  --code-property: #9e77dc;
   --code-punctuation: #725a73;
-  --code-string: #52ad82;
-  --code-tag: #ea9d34;
-  --code-value: #aa6f83;
+  --code-string: #3aa85b;
+  --code-tag: #ed9a00;
+  --code-value: #d1649c;
   --code-background: #f8e7d0;
 
   /* Tags */
-  --tag-color: #ea9d34;
-  --tag-color-hover: #ea9d34;
+  --tag-color: #ed9a00;
+  --tag-color-hover: #ed9a00;
   --tag-background: #f8e7d0;
   --tag-background-hover: #fff5e5;
 
   /* Graph */
   --graph-line: #fff5e5;
-  --graph-node: #ea9d34;
-  --graph-node-focused: #ea9d34;
-  --graph-node-tag: #6aaf9a;
-  --graph-node-attachment: #52ad82;
+  --graph-node: #ed9a00;
+  --graph-node-focused: #ed9a00;
+  --graph-node-tag: #00ab93;
+  --graph-node-attachment: #3aa85b;
 
   /* Scrollbar */
   --scrollbar-bg: #fef2e1;
@@ -1045,150 +1068,155 @@ settings:
   --nav-item-background-selected: #f8e7d0;
   --nav-item-color: #3a2e3b;
   --nav-item-color-hover: #3a2e3b;
-  --nav-item-color-active: #ea9d34;
+  --nav-item-color-active: #ed9a00;
   --nav-item-color-selected: #3a2e3b;
 }
+
+
 
 /* Black Atom — JPN ∷ Koyo Yoru */
 .theme-dark.black-atom-jpn-koyo-yoru {
   /* Foundation: Base Colors */
 
-  --color-base-00: #291d2e;
-  --color-base-05: #35293a;
-  --color-base-10: #413446;
-  --color-base-20: #4d4053;
-  --color-base-25: #605872;
-  --color-base-30: #76718f;
-  --color-base-35: #8d89a8;
-  --color-base-40: #9c98b3;
-  --color-base-50: #dcaf87;
-  --color-base-60: #ecbd96;
-  --color-base-70: #fbcaa4;
-  --color-base-100: #ffdbbf;
+  --color-base-00: #1c1121;
+  --color-base-05: #261a2a;
+  --color-base-10: #3a2d3f;
+  --color-base-20: #4a3d50;
+  --color-base-25: #59506a;
+  --color-base-30: #756c89;
+  --color-base-35: #927c5f;
+  --color-base-40: #b19b7c;
+  --color-base-50: #d1ba9b;
+  --color-base-60: #e1caaa;
+  --color-base-70: #ead2b2;
+  --color-base-100: #fae2c2;
+
 
   /* Extended Colors */
-  --color-red: #e47889;
-  --color-red-rgb: 228, 120, 137;
-  --color-orange: #fd9e66;
-  --color-orange-rgb: 253, 158, 102;
-  --color-yellow: #edaa4b;
-  --color-yellow-rgb: 237, 170, 75;
-  --color-green: #5db28d;
-  --color-green-rgb: 93, 178, 141;
-  --color-cyan: #7ea99c;
-  --color-cyan-rgb: 126, 169, 156;
-  --color-blue: #a298b9;
-  --color-blue-rgb: 162, 152, 185;
-  --color-purple: #eda77d;
-  --color-purple-rgb: 237, 167, 125;
-  --color-pink: #d08c63;
-  --color-pink-rgb: 208, 140, 99;
+  --color-red: #fe838f;
+  --color-red-rgb: 254, 131, 143;
+  --color-orange: #f88f4f;
+  --color-orange-rgb: 248, 143, 79;
+  --color-yellow: #e49e22;
+  --color-yellow-rgb: 228, 158, 34;
+  --color-green: #7fc08c;
+  --color-green-rgb: 127, 192, 140;
+  --color-cyan: #5cc3b0;
+  --color-cyan-rgb: 92, 195, 176;
+  --color-blue: #b5a4d7;
+  --color-blue-rgb: 181, 164, 215;
+  --color-purple: #e19b73;
+  --color-purple-rgb: 225, 155, 115;
+  --color-pink: #c07d55;
+  --color-pink-rgb: 192, 125, 85;
 
   /* Backgrounds */
-  --background-primary: #35293a;
-  --background-primary-alt: #413446;
-  --background-secondary: #291d2e;
-  --background-secondary-alt: #291d2e;
-  --background-modifier-hover: #413446;
-  --background-modifier-active-hover: #413446;
-  --background-modifier-border: #413446;
-  --background-modifier-border-hover: #413446;
-  --background-modifier-border-focus: #edaa4b;
-  --background-modifier-error-rgb: 90, 60, 87;
-  --background-modifier-error: #5a3c57;
-  --background-modifier-error-hover: #5a3c57;
-  --background-modifier-success-rgb: 65, 69, 99;
-  --background-modifier-success: #414563;
-  --background-modifier-message: #4f4257;
-  --background-modifier-form-field: #35293a;
+  --background-primary: #261a2a;
+  --background-primary-alt: #3a2d3f;
+  --background-secondary: #1c1121;
+  --background-secondary-alt: #1c1121;
+  --background-modifier-hover: #3a2d3f;
+  --background-modifier-active-hover: #3a2d3f;
+  --background-modifier-border: #3a2d3f;
+  --background-modifier-border-hover: #3a2d3f;
+  --background-modifier-border-focus: #e49e22;
+  --background-modifier-error-rgb: 83, 50, 78;
+  --background-modifier-error: #53324e;
+  --background-modifier-error-hover: #53324e;
+  --background-modifier-success-rgb: 55, 61, 90;
+  --background-modifier-success: #373d5a;
+  --background-modifier-message: #473850;
+  --background-modifier-form-field: #261a2a;
 
   /* Text */
-  --text-normal: #fbcaa4;
-  --text-muted: #9c98b3;
-  --text-faint: #8d89a8;
-  --text-accent: #edaa4b;
-  --text-accent-hover: #edaa4b;
-  --text-on-accent: #35293a;
-  --text-on-accent-inverted: #fbcaa4;
-  --text-error: #e47889;
-  --text-warning: #edaa4b;
-  --text-success: #5db28d;
-  --text-selection: #4d4053;
-  --text-highlight-bg: #4d4053;
+  --text-normal: #ead2b2;
+  --text-muted: #b19b7c;
+  --text-faint: #927c5f;
+  --text-accent: #e49e22;
+  --text-accent-hover: #e49e22;
+  --text-on-accent: #261a2a;
+  --text-on-accent-inverted: #ead2b2;
+  --text-error: #fe838f;
+  --text-warning: #e49e22;
+  --text-success: #7fc08c;
+  --text-selection: #4a3d50;
+  --text-highlight-bg: #4a3d50;
 
   /* Interactive */
-  --interactive-normal: #35293a;
-  --interactive-hover: #413446;
-  --interactive-accent: #edaa4b;
-  --interactive-accent-hover: #edaa4b;
+  --interactive-normal: #261a2a;
+  --interactive-hover: #3a2d3f;
+  --interactive-accent: #e49e22;
+  --interactive-accent-hover: #e49e22;
 
   /* Headings */
-  --h1-color: #edaa4b;
-  --h2-color: #edaa4b;
-  --h3-color: #edaa4b;
-  --h4-color: #9c98b3;
-  --h5-color: #9c98b3;
-  --h6-color: #9c98b3;
+  --h1-color: #e49e22;
+  --h2-color: #e49e22;
+  --h3-color: #e49e22;
+  --h4-color: #b19b7c;
+  --h5-color: #b19b7c;
+  --h6-color: #b19b7c;
 
   /* Markup */
-  --bold-color: #edaa4b;
-  --italic-color: #edaa4b;
-  --blockquote-border-color: #5db28d;
-  --link-color: #5db28d;
-  --link-color-hover: #5db28d;
-  --link-external-color: #5db28d;
-  --link-external-color-hover: #5db28d;
+  --bold-color: #e49e22;
+  --italic-color: #e49e22;
+  --blockquote-border-color: #7fc08c;
+  --link-color: #7fc08c;
+  --link-color-hover: #7fc08c;
+  --link-external-color: #7fc08c;
+  --link-external-color-hover: #7fc08c;
 
   /* Code / Syntax Highlighting */
-  --code-normal: #ecbd96;
-  --code-comment: #605872;
-  --code-function: #edaa4b;
-  --code-important: #eda77d;
-  --code-keyword: #eda77d;
-  --code-operator: #958aab;
-  --code-property: #a298b9;
-  --code-punctuation: #9c98b3;
-  --code-string: #5db28d;
-  --code-tag: #edaa4b;
-  --code-value: #958aab;
-  --code-background: #291d2e;
+  --code-normal: #e1caaa;
+  --code-comment: #756c89;
+  --code-function: #e49e22;
+  --code-important: #e19b73;
+  --code-keyword: #e19b73;
+  --code-operator: #d39bb5;
+  --code-property: #b5a4d7;
+  --code-punctuation: #b19b7c;
+  --code-string: #7fc08c;
+  --code-tag: #e49e22;
+  --code-value: #d39bb5;
+  --code-background: #1c1121;
 
   /* Tags */
-  --tag-color: #edaa4b;
-  --tag-color-hover: #edaa4b;
-  --tag-background: #413446;
-  --tag-background-hover: #413446;
+  --tag-color: #e49e22;
+  --tag-color-hover: #e49e22;
+  --tag-background: #3a2d3f;
+  --tag-background-hover: #3a2d3f;
 
   /* Graph */
-  --graph-line: #413446;
-  --graph-node: #edaa4b;
-  --graph-node-focused: #edaa4b;
-  --graph-node-tag: #7ea99c;
-  --graph-node-attachment: #5db28d;
+  --graph-line: #3a2d3f;
+  --graph-node: #e49e22;
+  --graph-node-focused: #e49e22;
+  --graph-node-tag: #5cc3b0;
+  --graph-node-attachment: #7fc08c;
 
   /* Scrollbar */
-  --scrollbar-bg: #35293a;
-  --scrollbar-thumb-bg: #413446;
-  --scrollbar-active-thumb-bg: #9c98b3;
+  --scrollbar-bg: #261a2a;
+  --scrollbar-thumb-bg: #3a2d3f;
+  --scrollbar-active-thumb-bg: #b19b7c;
 
   /* Nav */
-  --nav-item-background-hover: #413446;
-  --nav-item-background-active: #413446;
-  --nav-item-background-selected: #4d4053;
-  --nav-item-color: #fbcaa4;
-  --nav-item-color-hover: #fbcaa4;
-  --nav-item-color-active: #edaa4b;
-  --nav-item-color-selected: #fbcaa4;
+  --nav-item-background-hover: #3a2d3f;
+  --nav-item-background-active: #3a2d3f;
+  --nav-item-background-selected: #4a3d50;
+  --nav-item-color: #ead2b2;
+  --nav-item-color-hover: #ead2b2;
+  --nav-item-color-active: #e49e22;
+  --nav-item-color-selected: #ead2b2;
 }
+
+
 
 /* Black Atom — JPN ∷ Murasaki Yoru */
 .theme-dark.black-atom-jpn-murasaki-yoru {
   /* Foundation: Base Colors */
 
-  --color-base-00: #20141f;
-  --color-base-05: #332031;
-  --color-base-10: #462c43;
-  --color-base-20: #573954;
+  --color-base-00: #250d15;
+  --color-base-05: #351b23;
+  --color-base-10: #452a32;
+  --color-base-20: #5b3e47;
   --color-base-25: #6d4769;
   --color-base-30: #7d5178;
   --color-base-35: #865f88;
@@ -1198,120 +1226,123 @@ settings:
   --color-base-70: #d4bfd6;
   --color-base-100: #e8dbe9;
 
+
   /* Extended Colors */
-  --color-red: #f0635c;
-  --color-red-rgb: 240, 99, 92;
-  --color-orange: #fe9b15;
-  --color-orange-rgb: 254, 155, 21;
-  --color-yellow: #e6a318;
-  --color-yellow-rgb: 230, 163, 24;
-  --color-green: #6dc29f;
-  --color-green-rgb: 109, 194, 159;
-  --color-cyan: #8fbcbb;
-  --color-cyan-rgb: 143, 188, 187;
-  --color-blue: #71c0db;
-  --color-blue-rgb: 113, 192, 219;
-  --color-purple: #ec6eaa;
-  --color-purple-rgb: 236, 110, 170;
-  --color-pink: #7e5ba2;
-  --color-pink-rgb: 126, 91, 162;
+  --color-red: #ff857b;
+  --color-red-rgb: 255, 133, 123;
+  --color-orange: #e89a47;
+  --color-orange-rgb: 232, 154, 71;
+  --color-yellow: #dca23a;
+  --color-yellow-rgb: 220, 162, 58;
+  --color-green: #80bda2;
+  --color-green-rgb: 128, 189, 162;
+  --color-cyan: #72bdbc;
+  --color-cyan-rgb: 114, 189, 188;
+  --color-blue: #8cb6c5;
+  --color-blue-rgb: 140, 182, 197;
+  --color-purple: #d49bb2;
+  --color-purple-rgb: 212, 155, 178;
+  --color-pink: #b9a2d4;
+  --color-pink-rgb: 185, 162, 212;
 
   /* Backgrounds */
-  --background-primary: #332031;
-  --background-primary-alt: #462c43;
-  --background-secondary: #20141f;
-  --background-secondary-alt: #20141f;
-  --background-modifier-hover: #462c43;
-  --background-modifier-active-hover: #462c43;
-  --background-modifier-border: #462c43;
-  --background-modifier-border-hover: #462c43;
-  --background-modifier-border-focus: #e6a318;
-  --background-modifier-error-rgb: 92, 48, 75;
-  --background-modifier-error: #5c304b;
-  --background-modifier-error-hover: #5c304b;
-  --background-modifier-success-rgb: 69, 65, 98;
-  --background-modifier-success: #454162;
-  --background-modifier-message: #4d405e;
-  --background-modifier-form-field: #332031;
+  --background-primary: #351b23;
+  --background-primary-alt: #452a32;
+  --background-secondary: #250d15;
+  --background-secondary-alt: #250d15;
+  --background-modifier-hover: #452a32;
+  --background-modifier-active-hover: #452a32;
+  --background-modifier-border: #452a32;
+  --background-modifier-border-hover: #452a32;
+  --background-modifier-border-focus: #dca23a;
+  --background-modifier-error-rgb: 98, 50, 61;
+  --background-modifier-error: #62323d;
+  --background-modifier-error-hover: #62323d;
+  --background-modifier-success-rgb: 90, 58, 46;
+  --background-modifier-success: #5a3a2e;
+  --background-modifier-message: #503b50;
+  --background-modifier-form-field: #351b23;
 
   /* Text */
   --text-normal: #d4bfd6;
   --text-muted: #946996;
   --text-faint: #865f88;
-  --text-accent: #e6a318;
-  --text-accent-hover: #e6a318;
-  --text-on-accent: #332031;
+  --text-accent: #dca23a;
+  --text-accent-hover: #dca23a;
+  --text-on-accent: #351b23;
   --text-on-accent-inverted: #d4bfd6;
-  --text-error: #f0635c;
-  --text-warning: #e6a318;
-  --text-success: #6dc29f;
-  --text-selection: #573954;
-  --text-highlight-bg: #573954;
+  --text-error: #ff857b;
+  --text-warning: #dca23a;
+  --text-success: #80bda2;
+  --text-selection: #5b3e47;
+  --text-highlight-bg: #5b3e47;
 
   /* Interactive */
-  --interactive-normal: #332031;
-  --interactive-hover: #462c43;
-  --interactive-accent: #e6a318;
-  --interactive-accent-hover: #e6a318;
+  --interactive-normal: #351b23;
+  --interactive-hover: #452a32;
+  --interactive-accent: #dca23a;
+  --interactive-accent-hover: #dca23a;
 
   /* Headings */
-  --h1-color: #e6a318;
-  --h2-color: #e6a318;
-  --h3-color: #e6a318;
+  --h1-color: #dca23a;
+  --h2-color: #dca23a;
+  --h3-color: #dca23a;
   --h4-color: #946996;
   --h5-color: #946996;
   --h6-color: #946996;
 
   /* Markup */
-  --bold-color: #e6a318;
-  --italic-color: #e6a318;
-  --blockquote-border-color: #6dc29f;
-  --link-color: #6dc29f;
-  --link-color-hover: #6dc29f;
-  --link-external-color: #6dc29f;
-  --link-external-color-hover: #6dc29f;
+  --bold-color: #dca23a;
+  --italic-color: #dca23a;
+  --blockquote-border-color: #80bda2;
+  --link-color: #80bda2;
+  --link-color-hover: #80bda2;
+  --link-external-color: #80bda2;
+  --link-external-color-hover: #80bda2;
 
   /* Code / Syntax Highlighting */
   --code-normal: #c9b1cb;
-  --code-comment: #6d4769;
-  --code-function: #e6a318;
-  --code-important: #ec6eaa;
-  --code-keyword: #ec6eaa;
-  --code-operator: #38a6cd;
-  --code-property: #71c0db;
+  --code-comment: #7d5178;
+  --code-function: #dca23a;
+  --code-important: #d49bb2;
+  --code-keyword: #d49bb2;
+  --code-operator: #7ea5b7;
+  --code-property: #8cb6c5;
   --code-punctuation: #946996;
-  --code-string: #6dc29f;
-  --code-tag: #e6a318;
-  --code-value: #38a6cd;
-  --code-background: #20141f;
+  --code-string: #80bda2;
+  --code-tag: #dca23a;
+  --code-value: #7ea5b7;
+  --code-background: #250d15;
 
   /* Tags */
-  --tag-color: #e6a318;
-  --tag-color-hover: #e6a318;
-  --tag-background: #462c43;
-  --tag-background-hover: #462c43;
+  --tag-color: #dca23a;
+  --tag-color-hover: #dca23a;
+  --tag-background: #452a32;
+  --tag-background-hover: #452a32;
 
   /* Graph */
-  --graph-line: #462c43;
-  --graph-node: #e6a318;
-  --graph-node-focused: #e6a318;
-  --graph-node-tag: #8fbcbb;
-  --graph-node-attachment: #6dc29f;
+  --graph-line: #452a32;
+  --graph-node: #dca23a;
+  --graph-node-focused: #dca23a;
+  --graph-node-tag: #72bdbc;
+  --graph-node-attachment: #80bda2;
 
   /* Scrollbar */
-  --scrollbar-bg: #332031;
-  --scrollbar-thumb-bg: #462c43;
+  --scrollbar-bg: #351b23;
+  --scrollbar-thumb-bg: #452a32;
   --scrollbar-active-thumb-bg: #946996;
 
   /* Nav */
-  --nav-item-background-hover: #462c43;
-  --nav-item-background-active: #462c43;
-  --nav-item-background-selected: #573954;
+  --nav-item-background-hover: #452a32;
+  --nav-item-background-active: #452a32;
+  --nav-item-background-selected: #5b3e47;
   --nav-item-color: #d4bfd6;
   --nav-item-color-hover: #d4bfd6;
-  --nav-item-color-active: #e6a318;
+  --nav-item-color-active: #dca23a;
   --nav-item-color-selected: #d4bfd6;
 }
+
+
 
 /* Black Atom — JPN ∷ Tsuki Yoru */
 .theme-dark.black-atom-jpn-tsuki-yoru {
@@ -1329,6 +1360,7 @@ settings:
   --color-base-60: #cbcbcb;
   --color-base-70: #e6e6e6;
   --color-base-100: #ffffff;
+
 
   /* Extended Colors */
   --color-red: #f591b2;
@@ -1405,7 +1437,7 @@ settings:
 
   /* Code / Syntax Highlighting */
   --code-normal: #cbcbcb;
-  --code-comment: #4f4f61;
+  --code-comment: #69697f;
   --code-function: #eab899;
   --code-important: #aca1cf;
   --code-keyword: #aca1cf;
@@ -1445,6 +1477,8 @@ settings:
   --nav-item-color-selected: #e6e6e6;
 }
 
+
+
 /* Black Atom — MNML ∷ 47 Dark */
 .theme-dark.black-atom-mnml-47-dark {
   /* Foundation: Base Colors */
@@ -1461,6 +1495,7 @@ settings:
   --color-base-60: #f2daba;
   --color-base-70: #ffe7c7;
   --color-base-100: #feefdc;
+
 
   /* Extended Colors */
   --color-red: #98a485;
@@ -1577,6 +1612,8 @@ settings:
   --nav-item-color-selected: #ffe7c7;
 }
 
+
+
 /* Black Atom — MNML ∷ 47 Light */
 .theme-light.black-atom-mnml-47-light {
   /* Foundation: Base Colors */
@@ -1593,6 +1630,7 @@ settings:
   --color-base-60: #373d2f;
   --color-base-70: #20231b;
   --color-base-100: #151712;
+
 
   /* Extended Colors */
   --color-red: #98a485;
@@ -1709,6 +1747,8 @@ settings:
   --nav-item-color-selected: #20231b;
 }
 
+
+
 /* Black Atom — MNML ∷ Clay Dark */
 .theme-dark.black-atom-mnml-clay-dark {
   /* Foundation: Base Colors */
@@ -1725,6 +1765,7 @@ settings:
   --color-base-60: #d3cebc;
   --color-base-70: #e3decc;
   --color-base-100: #f3efdc;
+
 
   /* Extended Colors */
   --color-red: #b4ae9c;
@@ -1841,6 +1882,8 @@ settings:
   --nav-item-color-selected: #e3decc;
 }
 
+
+
 /* Black Atom — MNML ∷ Clay Light */
 .theme-light.black-atom-mnml-clay-light {
   /* Foundation: Base Colors */
@@ -1857,6 +1900,7 @@ settings:
   --color-base-60: #3e3a2f;
   --color-base-70: #322e22;
   --color-base-100: #252117;
+
 
   /* Extended Colors */
   --color-red: #888069;
@@ -1973,6 +2017,8 @@ settings:
   --nav-item-color-selected: #322e22;
 }
 
+
+
 /* Black Atom — MNML ∷ E-Ink Dark */
 .theme-dark.black-atom-mnml-eink-dark {
   /* Foundation: Base Colors */
@@ -1989,6 +2035,7 @@ settings:
   --color-base-60: #d1d1d1;
   --color-base-70: #dedede;
   --color-base-100: #ebebeb;
+
 
   /* Extended Colors */
   --color-red: #a4a4a4;
@@ -2105,6 +2152,8 @@ settings:
   --nav-item-color-selected: #dedede;
 }
 
+
+
 /* Black Atom — MNML ∷ E-Ink Light */
 .theme-light.black-atom-mnml-eink-light {
   /* Foundation: Base Colors */
@@ -2121,6 +2170,7 @@ settings:
   --color-base-60: #3d3d3d;
   --color-base-70: #292929;
   --color-base-100: #161616;
+
 
   /* Extended Colors */
   --color-red: #a4a4a4;
@@ -2237,6 +2287,8 @@ settings:
   --nav-item-color-selected: #292929;
 }
 
+
+
 /* Black Atom — MNML ∷ ITA Light */
 .theme-light.black-atom-mnml-ita-light {
   /* Foundation: Base Colors */
@@ -2253,6 +2305,7 @@ settings:
   --color-base-60: #2b2826;
   --color-base-70: #181614;
   --color-base-100: #0a0907;
+
 
   /* Extended Colors */
   --color-red: #c6c3c1;
@@ -2369,6 +2422,8 @@ settings:
   --nav-item-color-selected: #181614;
 }
 
+
+
 /* Black Atom — MNML ∷ Mikado Dark */
 .theme-dark.black-atom-mnml-mikado-dark {
   /* Foundation: Base Colors */
@@ -2385,6 +2440,7 @@ settings:
   --color-base-60: #d2dae3;
   --color-base-70: #e2ebf3;
   --color-base-100: #f8fafd;
+
 
   /* Extended Colors */
   --color-red: #8ab2dc;
@@ -2432,7 +2488,7 @@ settings:
   --text-on-accent-inverted: #e2ebf3;
   --text-error: #f86c59;
   --text-warning: #f8ac3d;
-  --text-success: #4eba65;
+  --text-success: #4EBA65;
   --text-selection: #2a435d;
   --text-highlight-bg: #2a435d;
 
@@ -2501,6 +2557,8 @@ settings:
   --nav-item-color-selected: #e2ebf3;
 }
 
+
+
 /* Black Atom — MNML ∷ Mikado Light */
 .theme-light.black-atom-mnml-mikado-light {
   /* Foundation: Base Colors */
@@ -2517,6 +2575,7 @@ settings:
   --color-base-60: #1c2b34;
   --color-base-70: #0f212d;
   --color-base-100: #121b21;
+
 
   /* Extended Colors */
   --color-red: #7b919d;
@@ -2633,6 +2692,8 @@ settings:
   --nav-item-color-selected: #0f212d;
 }
 
+
+
 /* Black Atom — MNML ∷ Mono Dark */
 .theme-dark.black-atom-mnml-mono-dark {
   /* Foundation: Base Colors */
@@ -2649,6 +2710,7 @@ settings:
   --color-base-60: #dad7d4;
   --color-base-70: #edeae8;
   --color-base-100: #fbf8f5;
+
 
   /* Extended Colors */
   --color-red: #a09e9b;
@@ -2765,6 +2827,8 @@ settings:
   --nav-item-color-selected: #edeae8;
 }
 
+
+
 /* Black Atom — MNML ∷ Mono Light */
 .theme-light.black-atom-mnml-mono-light {
   /* Foundation: Base Colors */
@@ -2781,6 +2845,7 @@ settings:
   --color-base-60: #2b2826;
   --color-base-70: #181614;
   --color-base-100: #0a0907;
+
 
   /* Extended Colors */
   --color-red: #c6c3c1;
@@ -2897,6 +2962,8 @@ settings:
   --nav-item-color-selected: #181614;
 }
 
+
+
 /* Black Atom — MNML ∷ Orange Dark */
 .theme-dark.black-atom-mnml-orange-dark {
   /* Foundation: Base Colors */
@@ -2913,6 +2980,7 @@ settings:
   --color-base-60: #cad3d5;
   --color-base-70: #d7e0e3;
   --color-base-100: #e4edf0;
+
 
   /* Extended Colors */
   --color-red: #9ea6a9;
@@ -3029,6 +3097,8 @@ settings:
   --nav-item-color-selected: #d7e0e3;
 }
 
+
+
 /* Black Atom — MNML ∷ Orange Light */
 .theme-light.black-atom-mnml-orange-light {
   /* Foundation: Base Colors */
@@ -3045,6 +3115,7 @@ settings:
   --color-base-60: #383e41;
   --color-base-70: #242a2c;
   --color-base-100: #111719;
+
 
   /* Extended Colors */
   --color-red: #9ea6a9;
@@ -3161,6 +3232,8 @@ settings:
   --nav-item-color-selected: #242a2c;
 }
 
+
+
 /* Black Atom — MNML ∷ Osman Light */
 .theme-light.black-atom-mnml-osman-light {
   /* Foundation: Base Colors */
@@ -3177,6 +3250,7 @@ settings:
   --color-base-60: #433c35;
   --color-base-70: #38312b;
   --color-base-100: #0e0a08;
+
 
   /* Extended Colors */
   --color-red: #f1342d;
@@ -3293,6 +3367,8 @@ settings:
   --nav-item-color-selected: #38312b;
 }
 
+
+
 /* Black Atom — Stations ∷ Engineering */
 .theme-dark.black-atom-stations-engineering {
   /* Foundation: Base Colors */
@@ -3309,6 +3385,7 @@ settings:
   --color-base-60: #c3eed9;
   --color-base-70: #d5f4e3;
   --color-base-100: #e8fbf0;
+
 
   /* Extended Colors */
   --color-red: #f08cb4;
@@ -3425,6 +3502,8 @@ settings:
   --nav-item-color-selected: #d5f4e3;
 }
 
+
+
 /* Black Atom — Stations ∷ Medical */
 .theme-light.black-atom-stations-medical {
   /* Foundation: Base Colors */
@@ -3441,6 +3520,7 @@ settings:
   --color-base-60: #384b42;
   --color-base-70: #2b3b33;
   --color-base-100: #22272f;
+
 
   /* Extended Colors */
   --color-red: #f472a0;
@@ -3557,6 +3637,8 @@ settings:
   --nav-item-color-selected: #2b3b33;
 }
 
+
+
 /* Black Atom — Stations ∷ Operations */
 .theme-dark.black-atom-stations-operations {
   /* Foundation: Base Colors */
@@ -3573,6 +3655,7 @@ settings:
   --color-base-60: #abe7ca;
   --color-base-70: #c1efd5;
   --color-base-100: #cef6de;
+
 
   /* Extended Colors */
   --color-red: #f08cb4;
@@ -3689,6 +3772,8 @@ settings:
   --nav-item-color-selected: #c1efd5;
 }
 
+
+
 /* Black Atom — Stations ∷ Research */
 .theme-light.black-atom-stations-research {
   /* Foundation: Base Colors */
@@ -3705,6 +3790,7 @@ settings:
   --color-base-60: #384b42;
   --color-base-70: #2b3b33;
   --color-base-100: #1e2229;
+
 
   /* Extended Colors */
   --color-red: #f472a0;
@@ -3821,6 +3907,8 @@ settings:
   --nav-item-color-selected: #2b3b33;
 }
 
+
+
 /* Black Atom — TERRA ∷ Fall Day */
 .theme-light.black-atom-terra-fall-day {
   /* Foundation: Base Colors */
@@ -3837,6 +3925,7 @@ settings:
   --color-base-60: #4f3222;
   --color-base-70: #422617;
   --color-base-100: #280e02;
+
 
   /* Extended Colors */
   --color-red: #bf4d3f;
@@ -3953,6 +4042,8 @@ settings:
   --nav-item-color-selected: #422617;
 }
 
+
+
 /* Black Atom — TERRA ∷ Fall Night */
 .theme-dark.black-atom-terra-fall-night {
   /* Foundation: Base Colors */
@@ -3969,6 +4060,7 @@ settings:
   --color-base-60: #d9b5a2;
   --color-base-70: #eac5b1;
   --color-base-100: #f7d6c5;
+
 
   /* Extended Colors */
   --color-red: #e87a69;
@@ -4085,6 +4177,8 @@ settings:
   --nav-item-color-selected: #eac5b1;
 }
 
+
+
 /* Black Atom — TERRA ∷ Spring Day */
 .theme-light.black-atom-terra-spring-day {
   /* Foundation: Base Colors */
@@ -4101,6 +4195,7 @@ settings:
   --color-base-60: #416353;
   --color-base-70: #385547;
   --color-base-100: #304a3f;
+
 
   /* Extended Colors */
   --color-red: #dd7e5d;
@@ -4217,6 +4312,8 @@ settings:
   --nav-item-color-selected: #385547;
 }
 
+
+
 /* Black Atom — TERRA ∷ Spring Night */
 .theme-dark.black-atom-terra-spring-night {
   /* Foundation: Base Colors */
@@ -4233,6 +4330,7 @@ settings:
   --color-base-60: #c3b8a4;
   --color-base-70: #d6d0c2;
   --color-base-100: #e0ddd1;
+
 
   /* Extended Colors */
   --color-red: #ba6e5f;
@@ -4349,6 +4447,8 @@ settings:
   --nav-item-color-selected: #d6d0c2;
 }
 
+
+
 /* Black Atom — TERRA ∷ Summer Day */
 .theme-light.black-atom-terra-summer-day {
   /* Foundation: Base Colors */
@@ -4365,6 +4465,7 @@ settings:
   --color-base-60: #1e4334;
   --color-base-70: #0d3025;
   --color-base-100: #012019;
+
 
   /* Extended Colors */
   --color-red: #d53d00;
@@ -4481,6 +4582,8 @@ settings:
   --nav-item-color-selected: #0d3025;
 }
 
+
+
 /* Black Atom — TERRA ∷ Summer Night */
 .theme-dark.black-atom-terra-summer-night {
   /* Foundation: Base Colors */
@@ -4497,6 +4600,7 @@ settings:
   --color-base-60: #dcd0b8;
   --color-base-70: #eae0cf;
   --color-base-100: #f7ede0;
+
 
   /* Extended Colors */
   --color-red: #e2805e;
@@ -4613,6 +4717,8 @@ settings:
   --nav-item-color-selected: #eae0cf;
 }
 
+
+
 /* Black Atom — TERRA ∷ Winter Day */
 .theme-light.black-atom-terra-winter-day {
   /* Foundation: Base Colors */
@@ -4629,6 +4735,7 @@ settings:
   --color-base-60: #2d3c4c;
   --color-base-70: #1e2a37;
   --color-base-100: #0e1721;
+
 
   /* Extended Colors */
   --color-red: #6e6ab2;
@@ -4745,6 +4852,8 @@ settings:
   --nav-item-color-selected: #1e2a37;
 }
 
+
+
 /* Black Atom — TERRA ∷ Winter Night */
 .theme-dark.black-atom-terra-winter-night {
   /* Foundation: Base Colors */
@@ -4761,6 +4870,7 @@ settings:
   --color-base-60: #d3dbe8;
   --color-base-70: #e2e8f2;
   --color-base-100: #eef2f9;
+
 
   /* Extended Colors */
   --color-red: #a8a6e5;

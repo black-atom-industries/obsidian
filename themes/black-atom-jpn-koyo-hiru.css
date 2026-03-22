@@ -1,4 +1,5 @@
 
+
 /* Black Atom — JPN ∷ Koyo Hiru */
 .theme-light.black-atom-jpn-koyo-hiru {
   /* Foundation: Base Colors */
@@ -18,8 +19,8 @@
 
 
   /* Extended Colors */
-  --color-red: #db6371;
-  --color-red-rgb: 219, 99, 113;
+  --color-red: #f5345e;
+  --color-red-rgb: 245, 52, 94;
   --color-orange: #f1771e;
   --color-orange-rgb: 241, 119, 30;
   --color-yellow: #ed9a00;
@@ -45,9 +46,9 @@
   --background-modifier-border: #fff5e5;
   --background-modifier-border-hover: #f8e7d0;
   --background-modifier-border-focus: #ed9a00;
-  --background-modifier-error-rgb: 246, 210, 180;
-  --background-modifier-error: #f6d2b4;
-  --background-modifier-error-hover: #f6d2b4;
+  --background-modifier-error-rgb: 254, 206, 166;
+  --background-modifier-error: #fecea6;
+  --background-modifier-error-hover: #fecea6;
   --background-modifier-success-rgb: 229, 218, 176;
   --background-modifier-success: #e5dab0;
   --background-modifier-message: #fccebd;
@@ -61,7 +62,7 @@
   --text-accent-hover: #ed9a00;
   --text-on-accent: #fef2e1;
   --text-on-accent-inverted: #3a2e3b;
-  --text-error: #db6371;
+  --text-error: #f5345e;
   --text-warning: #ed9a00;
   --text-success: #3aa85b;
   --text-selection: #f8e7d0;
