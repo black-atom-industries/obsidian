@@ -46,12 +46,12 @@
   --background-modifier-border: #fff6e3;
   --background-modifier-border-hover: #e6dcd0;
   --background-modifier-border-focus: #00936b;
-  --background-modifier-error-rgb: 249, 214, 169;
-  --background-modifier-error: #f9d6a9;
-  --background-modifier-error-hover: #f9d6a9;
-  --background-modifier-success-rgb: 219, 218, 179;
-  --background-modifier-success: #dbdab3;
-  --background-modifier-message: #ffceb8;
+  --background-modifier-error-rgb: 251, 209, 198;
+  --background-modifier-error: #fbd1c6;
+  --background-modifier-error-hover: #fbd1c6;
+  --background-modifier-success-rgb: 197, 222, 210;
+  --background-modifier-success: #c5ded2;
+  --background-modifier-message: #d2dafc;
   --background-modifier-form-field: #f3eadd;
 
   /* Text */
