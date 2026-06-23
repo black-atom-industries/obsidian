@@ -46,12 +46,12 @@
   --background-modifier-border: #3c3a35;
   --background-modifier-border-hover: #3c3a35;
   --background-modifier-border-focus: #fc8a61;
-  --background-modifier-error-rgb: 114, 73, 59;
-  --background-modifier-error: #72493b;
-  --background-modifier-error-hover: #72493b;
-  --background-modifier-success-rgb: 78, 90, 66;
-  --background-modifier-success: #4e5a42;
-  --background-modifier-message: #3f5968;
+  --background-modifier-error-rgb: 103, 66, 66;
+  --background-modifier-error: #674242;
+  --background-modifier-error-hover: #674242;
+  --background-modifier-success-rgb: 83, 89, 67;
+  --background-modifier-success: #535943;
+  --background-modifier-message: #435760;
   --background-modifier-form-field: #302e28;
 
   /* Text */
@@ -62,9 +62,9 @@
   --text-accent-hover: #fc8a61;
   --text-on-accent: #302e28;
   --text-on-accent-inverted: #e3decc;
-  --text-error: #fc8a61;
-  --text-warning: #d3a563;
-  --text-success: #99bb77;
+  --text-error: #dd7577;
+  --text-warning: #d6b174;
+  --text-success: #a9ba78;
   --text-selection: #4a4842;
   --text-highlight-bg: #4a4842;
 
