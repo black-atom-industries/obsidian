@@ -30,10 +30,10 @@
   --color-cyan-rgb: 78, 201, 131;
   --color-blue: #6a6f76;
   --color-blue-rgb: 106, 111, 118;
-  --color-purple: #a59eff;
-  --color-purple-rgb: 165, 158, 255;
-  --color-pink: #709afb;
-  --color-pink-rgb: 112, 154, 251;
+  --color-purple: #7faaff;
+  --color-purple-rgb: 127, 170, 255;
+  --color-pink: #fb82a1;
+  --color-pink-rgb: 251, 130, 161;
 
   /* Backgrounds */
   --background-primary: #12171b;
@@ -92,10 +92,10 @@
 
   /* Code / Syntax Highlighting */
   --code-normal: #d2d8df;
-  --code-comment: #5e6a5d;
+  --code-comment: #595e64;
   --code-function: #e5ecf3;
-  --code-important: #a59eff;
-  --code-keyword: #a59eff;
+  --code-important: #7faaff;
+  --code-keyword: #7faaff;
   --code-operator: #dbe2e9;
   --code-property: #7b8187;
   --code-punctuation: #d2d8df;
@@ -164,10 +164,10 @@
   --color-cyan-rgb: 78, 201, 131;
   --color-blue: #6a6f76;
   --color-blue-rgb: 106, 111, 118;
-  --color-purple: #a59eff;
-  --color-purple-rgb: 165, 158, 255;
-  --color-pink: #709afb;
-  --color-pink-rgb: 112, 154, 251;
+  --color-purple: #7faaff;
+  --color-purple-rgb: 127, 170, 255;
+  --color-pink: #fb82a1;
+  --color-pink-rgb: 251, 130, 161;
 
   /* Backgrounds */
   --background-primary: #12171b;
@@ -226,10 +226,10 @@
 
   /* Code / Syntax Highlighting */
   --code-normal: #d2d8df;
-  --code-comment: #5e6a5d;
+  --code-comment: #595e64;
   --code-function: #e5ecf3;
-  --code-important: #a59eff;
-  --code-keyword: #a59eff;
+  --code-important: #7faaff;
+  --code-keyword: #7faaff;
   --code-operator: #dbe2e9;
   --code-property: #7b8187;
   --code-punctuation: #d2d8df;
