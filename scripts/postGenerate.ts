@@ -12,14 +12,22 @@
 
 import { config } from "./config.ts";
 
+/**
+ * Collect matching files from `dir` and its subdirectories. Generated themes
+ * live one level down, under their collection; the full path list is sorted
+ * once so assembly order stays deterministic across collections.
+ */
 async function collectFiles(
   dir: string,
   ext: string,
 ): Promise<string[]> {
   const files: string[] = [];
   for await (const entry of Deno.readDir(dir)) {
-    if (entry.isFile && entry.name.endsWith(ext)) {
-      files.push(`${dir}/${entry.name}`);
+    const path = `${dir}/${entry.name}`;
+    if (entry.isDirectory) {
+      files.push(...await collectFiles(path, ext));
+    } else if (entry.isFile && entry.name.endsWith(ext)) {
+      files.push(path);
     }
   }
   return files.sort();

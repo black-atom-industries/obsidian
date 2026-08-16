@@ -15,7 +15,7 @@
   "fmt": {
     "indentWidth": 2,
     "useTabs": false,
-    "exclude": ["themes/collection.template.css"]
+    "exclude": ["themes/*/collection.template.css"]
   },
   "lint": {
     "rules": {
